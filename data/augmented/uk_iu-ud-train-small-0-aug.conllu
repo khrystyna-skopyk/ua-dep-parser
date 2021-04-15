@@ -1,0 +1,17 @@
+# text = У домі патриція римського Руфіна була фреска прегарна, зображення Венери та Адоніса.
+# translit = U domi patrycija rymśkoho Rufina bula freska preharna, zobraženńа Venery ta Adonisa.
+1	У	у	ADP	Spsl	Case=Loc	2	case	2:case	Id=0003|LTranslit=u|Translit=U
+2	домі	дім	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	6	obl	6:obl	Id=0004|LTranslit=dim|Translit=domi
+3	патриція	патрицій	NOUN	Ncmsgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	2	nmod	2:nmod	Id=0006|LTranslit=patrycij|Translit=patrycija
+4	римського	римський	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	3	amod	3:amod	Id=0005|LTranslit=rymśkyj|Translit=rymśkoho
+5	Руфіна	Руфін	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Giv|Number=Sing	3	flat:title	3:flat:title	Id=0007|LTranslit=Rufin|Translit=Rufina
+6	була	бути	VERB	Vapis-sf	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	_	root	0:root	Id=0008|LTranslit=buty|Translit=bula
+7	фреска	фреска	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	6	nsubj	6:nsubj	Id=000a|LTranslit=freska|Translit=freska
+8	прегарна	прегарний	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	7	amod	7:amod	Id=0009|LTranslit=preharnyj|SpaceAfter=No|Translit=preharna
+9	,	,	PUNCT	U	_	10	punct	10:punct	Id=000b|LTranslit=,|Translit=,
+10	зображення	зображення	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	7	appos	7:appos	Id=000c|LTranslit=zobraženńа|Translit=zobraženńа
+11	Венери	Венера	PROPN	Npfsgy	Animacy=Anim|Case=Gen|Gender=Fem|NameType=Giv|Number=Sing	10	nmod	10:nmod	Id=000d|LTranslit=Venera|Translit=Venery
+12	та	та	CCONJ	Ccs	_	13	cc	13:cc	Id=000e|LTranslit=ta|Translit=ta
+13	Адоніса	Адоніс	PROPN	Npmsgy	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Giv|Number=Sing	11	conj	10:nmod|11:conj	Id=000f|LTranslit=Adonis|SpaceAfter=No|Translit=Adonisa
+14	.	.	PUNCT	U	_	6	punct	6:punct	Id=000g|LTranslit=.|Translit=.
+
