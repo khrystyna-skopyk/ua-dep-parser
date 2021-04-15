@@ -1,0 +1,4 @@
+how to train model commands
+python -m spacy init fill-config base_config.cfg config.cfg
+python -m spacy convert uk_iu-ud-dev.conllu .
+python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy
