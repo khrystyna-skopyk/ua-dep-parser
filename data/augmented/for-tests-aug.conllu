@@ -1,7 +1,15 @@
-# text = — Трохи було…
-# translit = — Trochy bulo…
-1	—	—	PUNCT	U	PunctType=Dash	3	punct	3:punct	Id=02ub|LTranslit=—|Translit=—
-2	Трохи	трохи	ADV	R	_	3	advmod	3:advmod	Id=02ud|LTranslit=trochy|Translit=Trochy
-3	було	бути	VERB	Vapis-sn	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	_	root	0:root	Id=02uc|LTranslit=buty|SpaceAfter=No|Translit=bulo
-4	…	…	PUNCT	U	_	3	punct	3:punct	Id=02ue|LTranslit=…|Translit=…
+# text = Уявляв я собі, що померлі переживають, чекаючи на нас.
+# translit = Ujavľаv ja sobi, ščo pomerli perežyvajuť, čekajučy na nas.
+1	Уявляв	уявляти	VERB	Vmpis-sm	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	_	root	0:root	Id=0sej|LTranslit=ujavľаty|Translit=Ujavľаv
+2	я	я	PRON	Pp-1-ysnn	Animacy=Anim|Case=Nom|Number=Sing|Person=1|PronType=Prs	1	nsubj	1:nsubj	Id=0sei|LTranslit=ja|Translit=ja
+3	собі	себе	PRON	Px-----dn	Case=Dat|PronType=Prs|Reflex=Yes	1	expl	1:expl	Id=0sek|LTranslit=sebe|SpaceAfter=No|Translit=sobi
+4	,	,	PUNCT	U	_	7	punct	7:punct	Id=0sel|LTranslit=,|Translit=,
+5	що	що	PRON	Pr--nnsan	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing|PronType=Rel	7	obj	7:obj	Id=0sem|LTranslit=ščo|Translit=ščo
+6	померлі	померлі	NOUN	Ap--pns-	Animacy=Anim|Case=Nom|Number=Ptan	7	nsubj	7:nsubj	Id=0seo|LTranslit=pomerli|Translit=pomerli
+7	переживають	переживати	VERB	Vmpip3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	Id=0sen|LTranslit=perežyvaty|SpaceAfter=No|Translit=perežyvajuť
+8	,	,	PUNCT	U	_	9	punct	9:punct	Id=0sep|LTranslit=,|Translit=,
+9	чекаючи	чекати	VERB	Vmpgp	Aspect=Imp|Tense=Pres|VerbForm=Conv	7	advcl	7:advcl	Id=0seq|LTranslit=čekaty|Translit=čekajučy
+10	на	на	ADP	Spsa	Case=Acc	11	case	11:case	Id=0ser|LTranslit=na|Translit=na
+11	нас	ми	PRON	Pp-1-ypan	Animacy=Anim|Case=Acc|Number=Plur|Person=1|PronType=Prs	9	obl	9:obl	Id=0ses|LTranslit=my|SpaceAfter=No|Translit=nas
+12	.	.	PUNCT	U	_	1	punct	1:punct	Id=0set|LTranslit=.|Translit=.
 
