@@ -1,6 +1,3 @@
-# TODO:
-# - split change_shuffled into several funcs
-
 from collections import Counter, defaultdict
 from copy import deepcopy
 import re
@@ -34,6 +31,17 @@ class DataAugmentation(object):
                 return True
         return False
 
+    def verb_is_negated(self, index):
+        """
+        Checks if a verb has "не" as a dependent.
+        :param index: integer, index of a verb
+        :return: boolean
+        """
+        for dep_id, head_dep in self.deps:
+            if f"{index}:advmod" in head_dep and self.doc[dep_id-1]['lemma'] in ["не"]:
+                return True
+        return False
+
     def find_deps_to_aug(self):
         """
         Checks for tokens which can be shuffled.
@@ -46,15 +54,18 @@ class DataAugmentation(object):
             matched = re.match("\\d+", head_dep)
             head_id = int(matched.group())
             dep = head_dep[matched.end()+1:]
-            if abs(child_id-head_id) == 1 and not self.has_deeper_dep(child_id):
+            if abs(child_id-head_id) == 1 and not self.has_deeper_dep(child_id) and not self.verb_is_negated(head_id):
                 child_dct = self.doc[child_id - 1]
-                if dep in ['nmod', 'amod', 'obj', 'xcomp', 'obl']:
+                if dep in ['nmod', 'amod', 'xcomp', 'obl']:
                     to_aug.append((head_id, child_id))
-                elif dep in ['nsubj'] and self.doc[head_id-1]['upos'] == 'VERB':
+                elif dep in ['obj'] and not self.doc[child_id-1]['xpos'] in ['Pr--nnsan']:
                     to_aug.append((head_id, child_id))
-                elif dep in ['advmod'] and not self.doc[head_id-1]['upos'] in ['ADV', 'ADJ']:
+                elif dep in ['nsubj'] and self.doc[head_id-1]['upos'] in ['VERB']:
+                    to_aug.append((head_id, child_id))
+                elif dep in ['advmod'] and not self.doc[head_id-1]['upos'] in ['ADV', 'ADJ'] \
+                        and not self.doc[head_id-1]["lemma"] in ["не"]:
                     adv_feats = child_dct.get('feats', "")
-                    if "Polarity=Neg" != adv_feats and "PronType=Rel" != adv_feats and "PronType=Int" != adv_feats:
+                    if not adv_feats in ["Polarity=Neg", "PronType=Rel", "PronType=Int"]:
                         to_aug.append((head_id, child_id))
         return to_aug
 
@@ -73,37 +84,81 @@ class DataAugmentation(object):
                 el['head'] = dct_of_changes[el['head']]
                 el['deps'] = f"{el['head']}:{el['deprel']}"
         for new_c, new_h in head_child_to_aug:
-            ### capital letter
-            if new_c in [1, 2] or new_h in [1, 2]:
-                old_first_misc = new_lst[max(new_c,new_h)-1]['misc']
-                should_upper_first = old_first_misc.split("|")[-1].split("=")[1][0].isupper() #
-                old_second_text = new_lst[min(new_c,new_h)-1]['text']
-                should_upper_second = old_second_text[0].isupper() #
-                if should_upper_first:
-                    misc = new_lst[min(new_c,new_h)-1]['misc'].split("|")
-                    new_lst[min(new_c,new_h)-1]['misc'] = \
-                        f"{'|'.join(misc[:-1])}|Translit={misc[-1].split('=')[1].capitalize()}"
-                    new_lst[min(new_c,new_h)-1]['text'] = new_lst[min(new_c,new_h)-1]['text'].capitalize()
-                if not should_upper_second:
-                    misc = new_lst[max(new_c,new_h)-1]['misc'].split("|")
-                    new_lst[max(new_c,new_h)-1]['misc'] = \
-                        f"{'|'.join(misc[:-1])}|Translit={misc[-1].split('=')[1].lower()}"
-                    new_lst[max(new_c,new_h)-1]['text'] = new_lst[max(new_c,new_h)-1]['text'].lower()
-            ### spacing
-            misc_new_c = new_lst[new_c-1]['misc'].split("|")
-            misc_new_h = new_lst[new_h-1]['misc'].split("|")
-            if 'SpaceAfter=No' in misc_new_c and 'SpaceAfter=No' in misc_new_h:
-                continue
-            elif 'SpaceAfter=No' in misc_new_c:
-                misc_new_c = ("|").join(misc_new_c[:-2] + [misc_new_c[-1]])
-                misc_new_h = ("|").join(misc_new_h[:-1] + ['SpaceAfter=No'] + [misc_new_h[-1]])
-                new_lst[new_c-1]['misc'] = misc_new_c
-                new_lst[new_h-1]['misc'] = misc_new_h
-            elif 'SpaceAfter=No' in misc_new_h:
-                misc_new_c = ("|").join(misc_new_c[:-1] + ['SpaceAfter=No'] + [misc_new_c[-1]])
-                misc_new_h = ("|").join(misc_new_h[:-2] + [misc_new_h[-1]])
-                new_lst[new_c-1]['misc'] = misc_new_c
-                new_lst[new_h-1]['misc'] = misc_new_h
+            new_lst = DataAugmentation.fix_capital_letter(new_c, new_h, new_lst)
+            new_lst = DataAugmentation.fix_spacing(new_c, new_h, new_lst)
+        return new_lst
+
+    @staticmethod
+    def fix_spacing(new_c, new_h, new_lst):
+        """
+        Fixes spacing around nodes in the new sentence structure.
+        :param new_c: integer, index of the child node
+        :param new_h: integer, index of the head node
+        :param new_lst: list of dictionaries, new sentence
+        :return: updated list of dictionaries
+        """
+        misc_new_c = new_lst[new_c - 1]['misc'].split("|")
+        misc_new_h = new_lst[new_h - 1]['misc'].split("|")
+        if 'SpaceAfter=No' in misc_new_c and 'SpaceAfter=No' in misc_new_h:
+            return new_lst
+        elif 'SpaceAfter=No' in misc_new_c:
+            misc_new_c = ("|").join(misc_new_c[:-2] + [misc_new_c[-1]])
+            misc_new_h = ("|").join(misc_new_h[:-1] + ['SpaceAfter=No'] + [misc_new_h[-1]])
+            new_lst[new_c - 1]['misc'] = misc_new_c
+            new_lst[new_h - 1]['misc'] = misc_new_h
+        elif 'SpaceAfter=No' in misc_new_h:
+            misc_new_c = ("|").join(misc_new_c[:-1] + ['SpaceAfter=No'] + [misc_new_c[-1]])
+            misc_new_h = ("|").join(misc_new_h[:-2] + [misc_new_h[-1]])
+            new_lst[new_c - 1]['misc'] = misc_new_c
+            new_lst[new_h - 1]['misc'] = misc_new_h
+        return new_lst
+
+    @staticmethod
+    def fix_capital_letter(new_c, new_h, new_lst):
+        """
+        Fixes letter capitalization in the new sentence structure.
+        :param new_c: integer, index of the child node
+        :param new_h: integer, index of the head node
+        :param new_lst: list of dictionaries, new sentence
+        :return: updated list of dictionaries
+        """
+        old_first_text = new_lst[max(new_c, new_h) - 1]['text']
+        should_capitalize_first = old_first_text[0].isupper()
+        old_first_lemma = new_lst[max(new_c, new_h) - 1]['lemma']
+        shouldnt_change_second = any([l.isupper() for l in old_first_lemma])
+        old_second_text = new_lst[min(new_c, new_h) - 1]['text']
+        should_capitalize_second = old_second_text[0].isupper()
+        old_second_lemma = new_lst[min(new_c, new_h) - 1]['lemma']
+        shouldnt_change_first = any([l.isupper() for l in old_second_lemma])
+        if should_capitalize_first and not shouldnt_change_first:
+            misc = new_lst[min(new_c, new_h) - 1]['misc'].split("|")
+            new_lst[min(new_c, new_h) - 1]['misc'] = \
+                f"{'|'.join(misc[:-1])}|Translit={misc[-1].split('=')[1].capitalize()}"
+            new_lst[min(new_c, new_h) - 1]['text'] = new_lst[min(new_c, new_h) - 1]['text'].capitalize()
+        if not should_capitalize_second and not shouldnt_change_second:
+            misc = new_lst[max(new_c, new_h) - 1]['misc'].split("|")
+            new_lst[max(new_c, new_h) - 1]['misc'] = \
+                f"{'|'.join(misc[:-1])}|Translit={misc[-1].split('=')[1].lower()}"
+            new_lst[max(new_c, new_h) - 1]['text'] = new_lst[max(new_c, new_h) - 1]['text'].lower()
+        new_lst = DataAugmentation.digit_at_start(new_c, new_h, new_lst, old_first_text)
+        return new_lst
+
+    @staticmethod
+    def digit_at_start(new_c, new_h, new_lst, old_first_text):
+        """
+        Checks for the special case when there's a digit at the start of the sentence
+        :param new_c: integer, index of the child node
+        :param new_h: integer, index of the head node
+        :param new_lst: list of dictionaries, new sentence
+        :param old_first_text: string of the old first token
+        :return: updated list of dictionaries
+        """
+        was_first_digit = old_first_text[0].isdigit()
+        if was_first_digit and min(new_c, new_h) == 1:
+            misc = new_lst[min(new_c, new_h) - 1]['misc'].split("|")
+            new_lst[min(new_c, new_h) - 1]['misc'] = \
+                f"{'|'.join(misc[:-1])}|Translit={misc[-1].split('=')[1].capitalize()}"
+            new_lst[min(new_c, new_h) - 1]['text'] = new_lst[min(new_c, new_h) - 1]['text'].capitalize()
         return new_lst
 
     def shuffle(self, head_child_to_aug):
