@@ -1,5 +1,6 @@
 import stanza
 
+from models import Word
 from connector import Connector
 
 class StanzaConnector(Connector):
@@ -28,17 +29,19 @@ class StanzaConnector(Connector):
 
     def predict(self, text):
         document = self.model(text)
-        results = {}
-        index = 0
+        result = []
         for sent in document.sentences:
-            for word in sent.words:
-                parsing_result = {}
-                parsing_result["id"] = word.id
-                parsing_result["upos"] = str.lower(word.upos)
-                parsing_result["head"] = word.head
-                results[index] = parsing_result
-                index += 1
-        return results
+            for item in sent.words:
+                word = Word()
+                word.id = item.id
+                word.text = item.text
+                word.upos = str.lower(item.upos)
+                word.deprel = item.deprel
+                word.head = item.head
+                word.uas_weight = self.uas_weight
+                word.las_weight = self.las_weight
+                result.append(word)
+        return result
 
 
 
