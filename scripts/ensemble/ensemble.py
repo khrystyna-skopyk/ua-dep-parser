@@ -27,7 +27,7 @@ class DependencyParsingClassifier:
             texts= {}
             uposes = {}
             for word in word_list:
-                self.create_values_dict(word.deprel, deprels, word.uas_weight)
+                self.create_values_dict(word.deprel, deprels, word.las_weight)
                 self.create_values_dict(word.head, heads, word.uas_weight)
                 self.create_values_dict(word.id, ids, word.uas_weight)
                 self.create_values_dict(word.text, texts, word.uas_weight)
