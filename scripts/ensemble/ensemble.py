@@ -50,7 +50,9 @@ class DependencyParsingClassifier:
     def merge_dict_values(self, input_dict):
         selection_dict = {}
         for item in input_dict:
-            selection_dict[item] = input_dict[item]["weight"] * input_dict[item]["count"]
+            if item not in selection_dict:
+                selection_dict[item] = 0
+            selection_dict[item] += input_dict[item]["weight"] * input_dict[item]["count"]
         return max(selection_dict.items(), key=operator.itemgetter(1))[0]
 
     def create_values_dict(self, value, input_dict, weigth):
