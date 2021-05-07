@@ -42,7 +42,3 @@ class StanzaConnector(Connector):
                 word.las_weight = self.las_weight
                 result.append(word)
         return result
-
-
-
-    

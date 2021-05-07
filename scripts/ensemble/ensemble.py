@@ -1,5 +1,7 @@
 import operator
+
 from stanza_connector import StanzaConnector
+from dia_connector import DiaConnector
 
 class DependencyParsingClassifier:
     def __init__(self, connectors) -> None:
@@ -46,12 +48,15 @@ class DependencyParsingClassifier:
 
 
     def merge_dict_values(self, input_dict):
-
+        selection_dict = {}
         for item in input_dict:
-            input_dict[item]["probability"] = input_dict[item]["weight"] / input_dict[item]["count"]
-        return max(input_dict.items(), key=operator.itemgetter(1))[0]
+            selection_dict[item] = input_dict[item]["weight"] * input_dict[item]["count"]
+        return max(selection_dict.items(), key=operator.itemgetter(1))[0]
 
     def create_values_dict(self, value, input_dict, weigth):
+
+        if value == None:
+            return
             
         if value not in input_dict:
             input_dict[value] = {}
@@ -76,7 +81,8 @@ class DependencyParsingClassifier:
 
 if __name__ == "__main__":
     connector1 = StanzaConnector()
-    connector2 = StanzaConnector()
-    classifier = DependencyParsingClassifier([connector1,connector2])
+    connector2 = DiaConnector()
+
+    classifier = DependencyParsingClassifier([connector1, connector2])
     predictions = classifier.predict("Украї́нська пра́вда — українське суспільно-політичне інтернет-ЗМІ, засноване у квітні 2000 року.")
     print(predictions)
