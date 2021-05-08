@@ -1,7 +1,11 @@
 import operator
 
+from models import Word
 from stanza_connector import StanzaConnector
 from dia_connector import DiaConnector
+from collections import OrderedDict
+from conllu.models import TokenList, Token
+from conllu import parse_tree
 
 class DependencyParsingClassifier:
     def __init__(self, connectors) -> None:
@@ -44,7 +48,14 @@ class DependencyParsingClassifier:
         deprel = self.merge_dict_values(deprels)
         text = self.merge_dict_values(texts)
         upos = self.merge_dict_values(uposes)
-        return [id, head, deprel, text, upos]
+
+        word = Word()
+        word.id = id
+        word.head = head
+        word.deprel = deprel
+        word.text = text
+        word.upos = upos
+        return word
 
 
     def merge_dict_values(self, input_dict):
@@ -75,10 +86,20 @@ class DependencyParsingClassifier:
             predictions.append(prediction)
         predictions = self.revert_predictions(predictions)
         words = self.merge_predictions(predictions)
+        self.words = words
         return words
 
-    
-    
+    def write_to_conllu(self, path):
+        sentence = TokenList()
+        for word in self.words:
+            compiled_tokens = OrderedDict({'id': word.id, 'form': word.text, 'upostag': word.upos, 'head': word.head, 'deprel': word.deprel})
+            sentence.append(compiled_tokens)
+        sentences= [] 
+        sentences.append(sentence)
+
+        with open(path, 'w') as file:
+            file.writelines([sentence.serialize() + "\n" for sentence in sentences])
+
 
 
 if __name__ == "__main__":
@@ -87,4 +108,4 @@ if __name__ == "__main__":
 
     classifier = DependencyParsingClassifier([connector1, connector2])
     predictions = classifier.predict("Украї́нська пра́вда — українське суспільно-політичне інтернет-ЗМІ, засноване у квітні 2000 року.")
-    print(predictions)
+    classifier.write_to_conllu("ensemble.conllu")

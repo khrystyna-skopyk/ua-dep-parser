@@ -1,0 +1,19 @@
+1	Украї́нська	adj	2	amod
+2	пра́вда	noun	0	root
+3	—	punct	10	punct
+4	українське	adj	10	amod
+5	суспільно	adj	7	compound
+6	-	punct	5	punct
+7	політичне	adj	10	amod
+8	інтернет	noun	7	compound
+9	-	punct	8	punct
+10	ЗМІ	noun	2	appos
+11	,	punct	12	punct
+12	засноване	adj	10	amod
+13	у	adp	14	case
+14	квітні	noun	12	obl
+15	2000	adj	16	amod
+16	року	noun	14	nmod
+17	.	punct	2	punct
+
+
