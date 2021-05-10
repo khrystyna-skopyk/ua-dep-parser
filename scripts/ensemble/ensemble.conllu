@@ -1,19 +1,12 @@
-1	Украї́нська	adj	2	amod
-2	пра́вда	noun	0	root
-3	—	punct	10	punct
-4	українське	adj	10	amod
-5	суспільно	adj	7	compound
-6	-	punct	5	punct
-7	політичне	adj	10	amod
-8	інтернет	noun	7	compound
-9	-	punct	8	punct
-10	ЗМІ	noun	2	appos
-11	,	punct	12	punct
-12	засноване	adj	10	amod
-13	у	adp	14	case
-14	квітні	noun	12	obl
-15	2000	adj	16	amod
-16	року	noun	14	nmod
-17	.	punct	2	punct
+1	Зречення	зречення	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	6	nsubj	start_char=0|end_char=8
+2	культурної	культурний	ADJ	Afpfsgf	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	3	amod	start_char=9|end_char=19
+3	ідентичності	ідентичність	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	1	nmod	start_char=20|end_char=32
+4	–	–	PUNCT	U	PunctType=Dash	6	punct	start_char=33|end_char=34
+5	це	це	PRON	Pd--nnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	6	expl	start_char=35|end_char=37
+6	втрата	втрата	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	start_char=38|end_char=44
+7	свободи	свобода	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	nmod	start_char=45|end_char=52
+8	й	й	CCONJ	Ccs		9	cc	start_char=53|end_char=54
+9	самовладності	самовладність	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	7	conj	start_char=55|end_char=68
+10	.	.	PUNCT	U		6	punct	start_char=68|end_char=69
 
 

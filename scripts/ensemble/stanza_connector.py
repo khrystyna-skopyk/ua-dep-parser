@@ -35,10 +35,20 @@ class StanzaConnector(Connector):
                 word = Word()
                 word.id = item.id
                 word.text = item.text
-                word.upos = str.lower(item.upos)
-                word.deprel = item.deprel
+                word.lemma = item.lemma
+                word.upos = item.upos
+                word.xpos = item.xpos
+                word.feats = item.feats
                 word.head = item.head
+                word.deprel = item.deprel
+                word.misc = item.misc
                 word.uas_weight = self.uas_weight
                 word.las_weight = self.las_weight
                 result.append(word)
         return result
+
+if __name__ == "__main__":
+    connector = StanzaConnector()
+    predictions = connector.predict("Зречення культурної ідентичності – це втрата свободи й самовладності.")
+    #predictions = classifier.predict_full_text(full_text, "uk")
+   
