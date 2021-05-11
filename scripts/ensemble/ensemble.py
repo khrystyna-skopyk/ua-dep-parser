@@ -136,7 +136,7 @@ if __name__ == "__main__":
     connector1 = StanzaConnector()
     connector2 = DiaConnector()
 
-    with open('/home/notiqq/Documents/source/ua-dep-parser/data/UD_Ukrainian-IU/uk_iu-ud-test.txt') as f:
+    with open('uk_iu-ud-test.txt') as f:
         full_text = f.read()
 
     classifier = DependencyParsingClassifier([connector1, connector2])
