@@ -1,5 +1,6 @@
 import operator
 import stanza
+import time
 
 from models import Word
 from stanza_connector import StanzaConnector
@@ -88,7 +89,7 @@ class DependencyParsingClassifier:
     def create_values_dict(self, value, input_dict, weigth):
 
         if value == None:
-            return
+            value = ""
             
         if value not in input_dict:
             input_dict[value] = {}
@@ -98,18 +99,11 @@ class DependencyParsingClassifier:
         input_dict[value]["count"] += 1
         input_dict[value]["weight"] += weigth
 
-    def predict_full_text(self,text,language):
-        nlp = None
-        try:
-            nlp = stanza.Pipeline(lang=language, processors='tokenize')
-        except stanza.pipeline.core.LanguageNotDownloadedError:
-            stanza.download(language)
-        if nlp == None:
-            nlp = stanza.Pipeline(lang=language, processors='tokenize')
-
-        doc = nlp(text)
-        sentences = [sentence.text for sentence in doc.sentences]
+    def predict_full_text(self,text, delay):
+        sentences = text.split('\n')
         for sentence in sentences:
+            time.sleep(delay)
+            print(sentence)
             self.predict(sentence)
         return self.sentences
 
@@ -129,9 +123,8 @@ class DependencyParsingClassifier:
         for sentence_item in self.sentences:
             token_list = TokenList()
             for word in sentence_item:
-                compiled_tokens = OrderedDict({'id': word.id, 'form': word.text, 'lemma': word.lemma, 'upos': word.upos, 'xpos': word.xpos, 'feats':word.feats, 'head': word.head, 'deprel': word.deprel, 'misc':word.misc})
+                compiled_tokens = OrderedDict({'id': word.id, 'form': word.text, 'lemma': word.lemma, 'upos': word.upos, 'xpos': word.xpos, 'feats':word.feats, 'head': word.head, 'deprel': word.deprel, 'headdeprel':f'{word.head}:{word.deprel}','misc':word.misc})
                 token_list.append(compiled_tokens)
-            
             sentences_to_write.append(token_list)
 
         with open(path, 'w') as file:
@@ -143,10 +136,10 @@ if __name__ == "__main__":
     connector1 = StanzaConnector()
     connector2 = DiaConnector()
 
-    #with open('/home/notiqq/Documents/source/ua-dep-parser/data/UD_Ukrainian-IU/uk_iu-ud-test.txt') as f:
-    #    full_text = f.read()
+    with open('/home/notiqq/Documents/source/ua-dep-parser/data/UD_Ukrainian-IU/uk_iu-ud-test.txt') as f:
+        full_text = f.read()
 
     classifier = DependencyParsingClassifier([connector1, connector2])
-    predictions = classifier.predict("Зречення культурної ідентичності – це втрата свободи й самовладності.")
-    #predictions = classifier.predict_full_text(full_text, "uk")
+    #predictions = classifier.predict("Зречення культурної ідентичності – це втрата свободи й самовладності.")
+    predictions = classifier.predict_full_text(full_text, delay=1)
     classifier.write_to_conllu("ensemble.conllu")
