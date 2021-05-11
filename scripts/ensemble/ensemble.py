@@ -10,7 +10,7 @@ from conllu.models import TokenList, Token
 from conllu import parse_tree
 
 class DependencyParsingClassifier:
-    def __init__(self, connectors) -> None:
+    def __init__(self, connectors):
         self.connectors = connectors
         self.sentences = []
 

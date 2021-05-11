@@ -13,7 +13,7 @@ class StanzaConnector(Connector):
 
         try:
             kwargs["model"] = stanza.Pipeline(lang=kwargs['lang'], processors=kwargs["processors"])
-        except stanza.pipeline.core.LanguageNotDownloadedError:
+        except Exception as ex:
             stanza.download(kwargs["lang"])
         if "model" not in kwargs:
             kwargs["model"] = stanza.Pipeline(lang=kwargs['lang'], processors=kwargs["processors"])
