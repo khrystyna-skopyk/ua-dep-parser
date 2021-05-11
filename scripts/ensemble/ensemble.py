@@ -141,5 +141,5 @@ if __name__ == "__main__":
 
     classifier = DependencyParsingClassifier([connector1])
     #predictions = classifier.predict("Зречення культурної ідентичності – це втрата свободи й самовладності.")
-    predictions = classifier.predict_full_text(full_text, delay=1)
+    predictions = classifier.predict_full_text(full_text, delay=0)
     classifier.write_to_conllu("ensemble.conllu")
