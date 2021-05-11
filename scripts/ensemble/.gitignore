@@ -1,0 +1,4 @@
+.idea/
+.pytest_cache/
+scripts/__pycache__
+scripts/data_augmentation/__pycache__
