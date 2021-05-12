@@ -30,20 +30,23 @@ class DiaConnector(Connector):
     def predict(self, text):
         dataset = self.model.predict(text, text=self.language)
         result = []
-        id_count = 0
-        sentence = dataset.sentences[0]
-        for index, item in enumerate(sentence.words):
-            id_count += 1
+       
+        for index_sentence, sentence in enumerate(dataset.sentences):
+            if len(result) == 0:
+                result = [[] for number in range(len(dataset.sentences))]
+            id_count = 0
+            for index, item in enumerate(sentence.words):
+                id_count += 1
 
-            word = Word()
-            word.id = id_count
-            word.text = item
-            word.upos = None
-            word.deprel = sentence.rels[index]
-            word.head = sentence.arcs[index]
-            word.uas_weight = self.uas_weight
-            word.las_weight = self.las_weight
-            result.append(word)
+                word = Word()
+                word.id = id_count
+                word.text = item
+                word.upos = None
+                word.deprel = sentence.rels[index]
+                word.head = sentence.arcs[index]
+                word.uas_weight = self.uas_weight
+                word.las_weight = self.las_weight
+                result[index_sentence].append(word)
 
         return result
 

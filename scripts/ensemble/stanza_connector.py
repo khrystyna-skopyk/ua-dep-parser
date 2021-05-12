@@ -30,8 +30,10 @@ class StanzaConnector(Connector):
     def predict(self, text):
         document = self.model(text)
         result = []
-        for sent in document.sentences:
-            for item in sent.words:
+        for index_sentence, sentence in enumerate(document.sentences):
+            if len(result) == 0:
+                result = [[] for number in range(len(document.sentences))]
+            for item in sentence.words:
                 word = Word()
                 word.id = item.id
                 word.text = item.text
@@ -44,7 +46,7 @@ class StanzaConnector(Connector):
                 word.misc = item.misc
                 word.uas_weight = self.uas_weight
                 word.las_weight = self.las_weight
-                result.append(word)
+                result[index_sentence].append(word)
         return result
 
 if __name__ == "__main__":

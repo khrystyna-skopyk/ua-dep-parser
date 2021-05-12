@@ -19,39 +19,42 @@ class DependencyParsingClassifier:
             self.connectors.append(connector)
 
     def revert_predictions(self, predictions):
-        result = []
-        for index, prediction in enumerate(predictions):
-            if len(result) == 0:
-                result = [[] for number in range(len(prediction))]
-            for index, word in enumerate(prediction):
-                result[index].append(word)
-        return result
+        batches = [[] for number in range(len(predictions))]
+
+        for predictions_list in predictions:
+            for index_prediction, prediction in enumerate(predictions_list):
+                if len(batches[index_prediction]) == 0:
+                    batches[index_prediction] = [[] for number in range(len(prediction))]
+                for index, word in enumerate(prediction):
+                    batches[index_prediction][index].append(word)
+        return batches
 
     def merge_predictions(self, predictions):
         words = []
-        for word_list in predictions:
-            deprels = {} 
-            heads = {}
-            ids = {}
-            texts= {}
-            uposes = {}
-            lemmas = {}
-            xposes = {}
-            feats_list = {}
-            miscs = {}
-            for word in word_list:
-                self.create_values_dict(word.deprel, deprels, word.las_weight)
-                self.create_values_dict(word.head, heads, word.uas_weight)
-                self.create_values_dict(word.id, ids, word.uas_weight)
-                self.create_values_dict(word.text, texts, word.uas_weight)
-                self.create_values_dict(word.upos, uposes, word.uas_weight)
-                self.create_values_dict(word.lemma, lemmas, word.uas_weight)
-                self.create_values_dict(word.xpos, xposes, word.uas_weight)
-                self.create_values_dict(word.feats, feats_list, word.uas_weight)
-                self.create_values_dict(word.misc, miscs, word.uas_weight)
+        for sentence in predictions:
+            for word_list in sentence:
+                deprels = {} 
+                heads = {}
+                ids = {}
+                texts= {}
+                uposes = {}
+                lemmas = {}
+                xposes = {}
+                feats_list = {}
+                miscs = {}
+                for word in word_list:
+                    self.create_values_dict(word.deprel, deprels, word.las_weight)
+                    self.create_values_dict(word.head, heads, word.uas_weight)
+                    self.create_values_dict(word.id, ids, word.uas_weight)
+                    self.create_values_dict(word.text, texts, word.uas_weight)
+                    self.create_values_dict(word.upos, uposes, word.uas_weight)
+                    self.create_values_dict(word.lemma, lemmas, word.uas_weight)
+                    self.create_values_dict(word.xpos, xposes, word.uas_weight)
+                    self.create_values_dict(word.feats, feats_list, word.uas_weight)
+                    self.create_values_dict(word.misc, miscs, word.uas_weight)
 
-            word = self.merge_word_values(deprels, heads, ids, texts, uposes, lemmas,xposes, feats_list, miscs)
-            words.append(word)
+                word = self.merge_word_values(deprels, heads, ids, texts, uposes, lemmas,xposes, feats_list, miscs)
+                words.append(word)
         return words
 
     def merge_word_values(self, deprels, heads, ids, texts, uposes, lemmas, xposes, feats_list, miscs):
@@ -128,18 +131,19 @@ class DependencyParsingClassifier:
             sentences_to_write.append(token_list)
 
         with open(path, 'w') as file:
-            file.writelines([sentence.serialize() + "\n" for sentence in sentences_to_write])
+            file.writelines([sentence.serialize() for sentence in sentences_to_write])
 
 
 
 if __name__ == "__main__":
     connector1 = StanzaConnector()
-    #connector2 = DiaConnector()
+    connector2 = DiaConnector()
 
-    with open('uk_iu-ud-test.txt') as f:
-        full_text = f.read()
+    #with open('uk_iu-ud-test.txt') as f:
+    #    full_text = f.read()
 
-    classifier = DependencyParsingClassifier([connector1])
-    #predictions = classifier.predict("Зречення культурної ідентичності – це втрата свободи й самовладності.")
-    predictions = classifier.predict_full_text(full_text, delay=0)
-    classifier.write_to_conllu("ensemble.conllu")
+    classifier = DependencyParsingClassifier([connector1, connector2])
+    predictions = classifier.predict("Продавши свій шедевр Меценатові, еллінський скульптор споневажив саме мистецтво: Ти не продався, – гірше!")
+    print(predictions)
+    #predictions = classifier.predict_full_text(full_text, delay=0)
+    #classifier.write_to_conllu("ensemble.conllu")
