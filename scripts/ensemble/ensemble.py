@@ -130,9 +130,17 @@ class DependencyParsingClassifier:
         for sentence_item in self.sentences:
             token_list = TokenList()
             for word in sentence_item.words:
-                compiled_tokens = OrderedDict({'id': word.id, 'form': word.text, 'lemma': word.lemma, 'upos': word.upos,
-                'xpos': word.xpos, 'feats':word.feats, 'head': word.head, 'deprel': word.deprel, 'headdeprel':f'{word.head}:{word.deprel}', 
-                'misc':word.misc})
+                compiled_tokens = OrderedDict()
+                compiled_tokens['id'] = word.id
+                compiled_tokens['form'] = word.text
+                compiled_tokens['lemma'] = word.lemma
+                compiled_tokens['upos'] = word.upos
+                compiled_tokens['xpos'] = word.xpos
+                compiled_tokens['feats'] = word.feats
+                compiled_tokens['head'] = word.head
+                compiled_tokens['deprel'] = word.deprel
+                compiled_tokens['headdeprel'] = f'{word.head}:{word.deprel}'
+                compiled_tokens['misc'] = word.misc
                 token_list.append(compiled_tokens)
             sentences_to_write.append(token_list)
 
