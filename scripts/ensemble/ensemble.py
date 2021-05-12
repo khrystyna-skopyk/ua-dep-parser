@@ -139,8 +139,7 @@ class DependencyParsingClassifier:
                 compiled_tokens['feats'] = word.feats
                 compiled_tokens['head'] = word.head
                 compiled_tokens['deprel'] = word.deprel
-                headdeprel = f"{word.head}:{word.deprel}"
-                compiled_tokens['headdeprel'] = headdeprel
+                compiled_tokens['headdeprel'] = str(word.head) +":" + str(word.deprel)
                 compiled_tokens['misc'] = word.misc
                 token_list.append(compiled_tokens)
             sentences_to_write.append(token_list)
