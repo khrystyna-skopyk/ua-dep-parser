@@ -1,8 +1,9 @@
 import operator
+from typing import Sequence
 import stanza
 import time
 
-from models import Word
+from models import Word, Sentence
 from stanza_connector import StanzaConnector
 from dia_connector import DiaConnector
 from collections import OrderedDict
@@ -19,7 +20,9 @@ class DependencyParsingClassifier:
             self.connectors.append(connector)
 
     def revert_predictions(self, predictions):
-        batches = [[] for number in range(len(predictions))]
+        if len(predictions) == 0:
+            return []
+        batches = [[] for number in range(len(predictions[0]))]
 
         for predictions_list in predictions:
             for index_prediction, prediction in enumerate(predictions_list):
@@ -30,7 +33,7 @@ class DependencyParsingClassifier:
         return batches
 
     def merge_predictions(self, predictions):
-        words = []
+        parsed_sentence = Sentence()
         for sentence in predictions:
             for word_list in sentence:
                 deprels = {} 
@@ -54,8 +57,8 @@ class DependencyParsingClassifier:
                     self.create_values_dict(word.misc, miscs, word.uas_weight)
 
                 word = self.merge_word_values(deprels, heads, ids, texts, uposes, lemmas,xposes, feats_list, miscs)
-                words.append(word)
-        return words
+                parsed_sentence.add(word)
+        return parsed_sentence
 
     def merge_word_values(self, deprels, heads, ids, texts, uposes, lemmas, xposes, feats_list, miscs):
         id = self.merge_dict_values(ids)
@@ -102,13 +105,16 @@ class DependencyParsingClassifier:
         input_dict[value]["count"] += 1
         input_dict[value]["weight"] += weigth
 
-    def predict_full_text(self,text, delay):
+    def predict_full_text(self,text, delay = 0):
         sentences = text.split('\n')
+        parsed_sentences = []
         for sentence in sentences:
             time.sleep(delay)
             print(sentence)
-            self.predict(sentence)
-        return self.sentences
+            parsed_sentence = self.predict(sentence)
+            parsed_sentences.append(parsed_sentence)
+        self.sentences = parsed_sentences
+        return parsed_sentences
 
     def predict(self, sentence):
         predictions = []
@@ -116,16 +122,14 @@ class DependencyParsingClassifier:
             prediction = connector.predict(sentence)
             predictions.append(prediction)
         predictions = self.revert_predictions(predictions)
-        words = self.merge_predictions(predictions)
-
-        self.sentences.append(words)
-        return self.sentences
+        parsed_sentence = self.merge_predictions(predictions)
+        return parsed_sentence
 
     def write_to_conllu(self, path):
         sentences_to_write = [] 
         for sentence_item in self.sentences:
             token_list = TokenList()
-            for word in sentence_item:
+            for word in sentence_item.words:
                 compiled_tokens = OrderedDict({'id': word.id, 'form': word.text, 'lemma': word.lemma, 'upos': word.upos, 'xpos': word.xpos, 'feats':word.feats, 'head': word.head, 'deprel': word.deprel, 'headdeprel':f'{word.head}:{word.deprel}','misc':word.misc})
                 token_list.append(compiled_tokens)
             sentences_to_write.append(token_list)
@@ -137,13 +141,12 @@ class DependencyParsingClassifier:
 
 if __name__ == "__main__":
     connector1 = StanzaConnector()
-    connector2 = DiaConnector()
+    #connector2 = DiaConnector()
 
-    #with open('uk_iu-ud-test.txt') as f:
-    #    full_text = f.read()
+    with open('uk_iu-ud-test.txt') as f:
+        full_text = f.read()
 
-    classifier = DependencyParsingClassifier([connector1, connector2])
-    predictions = classifier.predict("Казала, ніколи більше туди не піду.")
+    classifier = DependencyParsingClassifier([connector1])
+    predictions = classifier.predict_full_text(full_text)
     print(predictions)
-    #predictions = classifier.predict_full_text(full_text, delay=0)
-    #classifier.write_to_conllu("ensemble.conllu")
+    classifier.write_to_conllu("ensemble.conllu")
