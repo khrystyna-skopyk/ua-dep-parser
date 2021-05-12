@@ -24,8 +24,8 @@ class DependencyParsingClassifier:
         for predictions_list in predictions:
             for index_prediction, prediction in enumerate(predictions_list):
                 if len(batches[index_prediction]) == 0:
-                    batches[index_prediction] = [[] for number in range(len(prediction))]
-                for index, word in enumerate(prediction):
+                    batches[index_prediction] = [[] for number in range(len(prediction.words))]
+                for index, word in enumerate(prediction.words):
                     batches[index_prediction][index].append(word)
         return batches
 
@@ -143,7 +143,7 @@ if __name__ == "__main__":
     #    full_text = f.read()
 
     classifier = DependencyParsingClassifier([connector1, connector2])
-    predictions = classifier.predict("Продавши свій шедевр Меценатові, еллінський скульптор споневажив саме мистецтво: Ти не продався, – гірше!")
+    predictions = classifier.predict("Казала, ніколи більше туди не піду.")
     print(predictions)
     #predictions = classifier.predict_full_text(full_text, delay=0)
     #classifier.write_to_conllu("ensemble.conllu")

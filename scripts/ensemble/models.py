@@ -1,5 +1,5 @@
 class Word:
-    def __init__(self) -> None:
+    def __init__(self):
         self.upos = ""
         self.head = ""
         self.deprel = ""
@@ -11,3 +11,11 @@ class Word:
         self.text = ""
         self.uas_weight = 0
         self.las_weight = 0
+
+
+class Sentence:
+    def __init__(self):
+        self.words = []
+
+    def add(self, word):
+        self.words.append(word)
