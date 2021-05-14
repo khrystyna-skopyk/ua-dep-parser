@@ -62,9 +62,4 @@ class StanzaConnector(Connector):
                 parsed_sentence.add(word)
             result.append(parsed_sentence)
         return result
-
-if __name__ == "__main__":
-    connector = StanzaConnector()
-    predictions = connector.predict("Зречення культурної ідентичності – це втрата свободи й самовладності.")
-    #predictions = classifier.predict_full_text(full_text, "uk")
    
