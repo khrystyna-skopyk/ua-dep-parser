@@ -18,7 +18,7 @@ class DiaConnector(Connector):
         if "model" not in kwargs:
             kwargs["model"] = Parser.load(kwargs["corpus_name"])
 
-    def __init__(self, **kwargs) -> None:
+    def __init__(self, **kwargs):
         if "model" not in kwargs:
             self.__init_model(kwargs)
         if "uas_weight" not in kwargs:
