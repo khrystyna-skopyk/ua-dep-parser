@@ -4472,20 +4472,6 @@
 13	Фльосенбурзі	Фльосенбург	PROPN	Npmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	11	obl	11:obl	Id=1gac|LTranslit=Fľosenburh|SpaceAfter=No|Translit=Fľosenburzi
 14	.	.	PUNCT	U	_	4	punct	4:punct	Id=1gad|LTranslit=.|Translit=.
 
-# sent_id = 1gae
-# text = Загалом у тому таборі вижило близько півтори тисячі в’язнів.
-# translit = Zahalom u tomu tabori vyžylo blyźko pivtory tyśаči vjazniv.
-1	Загалом	загалом	ADV	R	_	5	advmod	5:advmod	Id=1gaf|LTranslit=zahalom|Translit=Zahalom
-2	у	у	ADP	Spsl	Case=Loc	4	case	4:case	Id=1gag|LTranslit=u|Translit=u
-3	тому	той	DET	Pd--m-sla	Case=Loc|Gender=Masc|Number=Sing|PronType=Dem	4	det	4:det	Id=1gah|LTranslit=toj|Translit=tomu
-4	таборі	табір	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	5	obl	5:obl	Id=1gai|LTranslit=tabir|Translit=tabori
-5	вижило	вижити	VERB	Vmeis-sn	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	0:root	Id=1gaj|LTranslit=vyžyty|Translit=vyžylo
-6	близько	близько	ADP	Spsg	Case=Gen	7	case	7:case	Id=1gak|LTranslit=blyźko|Translit=blyźko
-7	півтори	півтори	NUM	Mlcfsg	Case=Gen|Gender=Fem|NumType=Card|Uninflect=Yes	8	nummod	8:nummod	Id=1gal|LTranslit=pivtory|Translit=pivtory
-8	тисячі	тисяча	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing|NumType=Card	5	nsubj	5:nsubj	Id=1gam|LTranslit=tyśаča|Translit=tyśаči
-9	в’язнів	в’язень	NOUN	Ncmpgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	8	nmod	8:nmod	Id=1gan|LTranslit=vjazeń|SpaceAfter=No|Translit=vjazniv
-10	.	.	PUNCT	U	_	5	punct	5:punct	Id=1gao|LTranslit=.|Translit=.
-
 # sent_id = 1gap
 # text = Мені траплялася інформація, що перед звільненням табору більше 10 тисяч бранців були вивезені СС на південь і знищені під час «маршу смерті».
 # translit = Meni trapľаlaśа informacija, ščo pered zviľnenńаm taboru biľše 10 tyśаč branciv buly vyvezeni SS na pivdeń i znyščeni pid čas «maršu smerti».
@@ -8951,18 +8937,6 @@
 10	дуже	дуже	ADV	Rp	Degree=Pos	11	advmod	11:advmod	Id=1mgh|LTranslit=duže|Translit=duže
 11	тяжко	тяжко	ADV	Rp	Degree=Pos	6	advmod	6:advmod	Id=1mgi|LTranslit=ťаžko|SpaceAfter=No|Translit=ťаžko
 12	.	.	PUNCT	U	_	6	punct	6:punct	Id=1mgj|LTranslit=.|Translit=.
-
-# sent_id = 1mgk
-# text = Казала, ніколи більше туди не піду.
-# translit = Kazala, nikoly biľše tudy ne pidu.
-1	Казала	казати	VERB	Vmpis-sf	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	0:root	Id=1mgl|LTranslit=kazaty|SpaceAfter=No|Translit=Kazala
-2	,	,	PUNCT	U	_	7	punct	7:punct	Id=1mgm|LTranslit=,|Translit=,
-3	ніколи	ніколи	ADV	Pz------r	PronType=Neg	7	advmod	7:advmod	Id=1mgn|LTranslit=nikoly|Translit=nikoly
-4	більше	більше	ADV	Rc	Degree=Cmp	7	advmod	7:advmod	Id=1mgo|LTranslit=biľše|Translit=biľše
-5	туди	туди	ADV	Pd------r	PronType=Dem	7	advmod	7:advmod	Id=1mgp|LTranslit=tudy|Translit=tudy
-6	не	не	PART	Q	Polarity=Neg	7	advmod	7:advmod	Id=1mgq|LTranslit=ne|Translit=ne
-7	піду	піти	VERB	Vmeif1s	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	1	ccomp	1:ccomp	Id=1mgr|LTranslit=pity|SpaceAfter=No|Translit=pidu
-8	.	.	PUNCT	U	_	1	punct	1:punct	Id=1mgs|LTranslit=.|Translit=.
 
 # sent_id = 1mgt
 # text = Опісля нього - німого Івана.
