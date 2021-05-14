@@ -1,11 +1,1792 @@
-1	Зречення		_	_	_	6	nsubj	6:nsubj	_
-2	культурної		_	_	_	3	amod	3:amod	_
-3	ідентичності		_	_	_	1	nmod	1:nmod	_
-4	–		_	_	_	6	punct	6:punct	_
-5	це		_	_	_	6	expl	6:expl	_
-6	втрата		_	_	_	0	root	0:root	_
-7	свободи		_	_	_	6	nmod	6:nmod	_
-8	й		_	_	_	9	cc	9:cc	_
-9	самовладності		_	_	_	7	conj	7:conj	_
-10	.		_	_	_	6	punct	6:punct	_
+10	.	.	PUNCT	U		6	punct	6:punct	start_char=68|end_char=69
+
+11	:	:	PUNCT	U		8	punct	8:punct	start_char=79|end_char=80
+
+7	!	!	PUNCT	U		6	punct	6:punct	start_char=104|end_char=105
+
+18	.	.	PUNCT	U		2	punct	2:punct	start_char=74|end_char=75
+
+15	?	?	PUNCT	U		5	punct	5:punct	start_char=69|end_char=70
+
+15	.	.	PUNCT	U		6	punct	6:punct	start_char=73|end_char=74
+
+46	.	.	PUNCT	U		21	punct	21:punct	start_char=204|end_char=205
+
+29	.	.	PUNCT	U		10	punct	10:punct	start_char=156|end_char=157
+
+10	.	.	PUNCT	U		5	punct	5:punct	start_char=57|end_char=58
+
+33	.	.	PUNCT	U		17	punct	17:punct	start_char=209|end_char=210
+
+39	)	)	PUNCT	U		33	punct	33:punct	start_char=211|end_char=212
+
+86	.	.	PUNCT	U		85	punct	85:punct	start_char=435|end_char=436
+
+31	»	»	PUNCT	U	PunctType=Quot	7	punct	7:punct	start_char=147|end_char=148
+
+34	.	.	PUNCT	U		13	punct	13:punct	start_char=175|end_char=176
+
+90	.	.	PUNCT	U		67	punct	67:punct	start_char=465|end_char=466
+
+20	.	.	PUNCT	U		11	punct	11:punct	start_char=106|end_char=107
+
+24	.	.	PUNCT	U		5	punct	5:punct	start_char=167|end_char=168
+
+17	.	.	PUNCT	U		4	punct	4:punct	start_char=99|end_char=100
+
+13	.	.	PUNCT	U		9	punct	9:punct	start_char=72|end_char=73
+
+12	.	.	PUNCT	U		6	punct	6:punct	start_char=84|end_char=85
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=34|end_char=35
+
+7	:	:	PUNCT	U		2	punct	2:punct	start_char=49|end_char=50
+
+16	.	.	PUNCT	U		2	punct	2:punct	start_char=87|end_char=88
+
+8	.	.	PUNCT	U		5	punct	5:punct	start_char=48|end_char=49
+
+4	.	.	PUNCT	U		1	punct	1:punct	start_char=15|end_char=16
+
+2	!	!	PUNCT	U		1	punct	1:punct	start_char=3|end_char=4
+
+22	.	.	PUNCT	U		2	punct	2:punct	start_char=104|end_char=105
+
+8	.	.	PUNCT	U		7	punct	7:punct	start_char=33|end_char=34
+
+6	.	.	PUNCT	U		2	punct	2:punct	start_char=32|end_char=33
+
+20	.	.	PUNCT	U		3	punct	3:punct	start_char=109|end_char=110
+
+9	.	.	PUNCT	U		2	punct	2:punct	start_char=42|end_char=43
+
+58	.	.	PUNCT	U		37	punct	37:punct	start_char=356|end_char=357
+
+4	.	.	PUNCT	U		1	punct	1:punct	start_char=3|end_char=4
+
+35	.	.	PUNCT	U		6	punct	6:punct	start_char=217|end_char=218
+
+4	.	.	PUNCT	U		1	punct	1:punct	start_char=3|end_char=4
+
+118	.	.	PUNCT	U		108	punct	108:punct	start_char=733|end_char=734
+
+4	.	.	PUNCT	U		1	punct	1:punct	start_char=3|end_char=4
+
+70	.	.	PUNCT	U		49	punct	49:punct	start_char=515|end_char=516
+
+4	.	.	PUNCT	U		1	punct	1:punct	start_char=3|end_char=4
+
+16	.	.	PUNCT	U		6	punct	6:punct	start_char=101|end_char=102
+
+24	.	.	PUNCT	U		2	punct	2:punct	start_char=174|end_char=175
+
+8	.	.	PUNCT	U		2	punct	2:punct	start_char=45|end_char=46
+
+4	.	.	PUNCT	U		2	punct	2:punct	start_char=21|end_char=22
+
+26	.	.	PUNCT	U		2	punct	2:punct	start_char=152|end_char=153
+
+15	.	.	PUNCT	U		5	punct	5:punct	start_char=76|end_char=77
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=32|end_char=33
+
+22	.	.	PUNCT	U		6	punct	6:punct	start_char=134|end_char=135
+
+35	.	.	PUNCT	U		5	punct	5:punct	start_char=203|end_char=204
+
+38	.	.	PUNCT	U		4	punct	4:punct	start_char=246|end_char=247
+
+28	.	.	PUNCT	U		20	punct	20:punct	start_char=136|end_char=137
+
+10	.	.	PUNCT	U		5	punct	5:punct	start_char=57|end_char=58
+
+41	.	.	PUNCT	U		16	punct	16:punct	start_char=244|end_char=245
+
+15	.	.	PUNCT	U		4	punct	4:punct	start_char=82|end_char=83
+
+33	.	.	PUNCT	U		4	punct	4:punct	start_char=208|end_char=209
+
+20	.	.	PUNCT	U		8	punct	8:punct	start_char=124|end_char=125
+
+16	.	.	PUNCT	U		3	punct	3:punct	start_char=86|end_char=87
+
+16	.	.	PUNCT	U		2	punct	2:punct	start_char=82|end_char=83
+
+5	!	!	PUNCT	U		1	punct	1:punct	start_char=22|end_char=23
+
+21	!	!	PUNCT	U		12	punct	12:punct	start_char=111|end_char=112
+
+24	.	.	PUNCT	U		1	punct	1:punct	start_char=138|end_char=139
+
+12	.	.	PUNCT	U		1	punct	1:punct	start_char=63|end_char=64
+
+8	.	.	PUNCT	U		3	punct	3:punct	start_char=46|end_char=47
+
+14	.	.	PUNCT	U		10	punct	10:punct	start_char=96|end_char=97
+
+13	.	.	PUNCT	U		6	punct	6:punct	start_char=89|end_char=90
+
+31	.	.	PUNCT	U		3	punct	3:punct	start_char=147|end_char=148
+
+26	.	.	PUNCT	U		7	punct	7:punct	start_char=141|end_char=142
+
+20	.	.	PUNCT	U		9	punct	9:punct	start_char=114|end_char=115
+
+14	.	.	PUNCT	U		13	punct	13:punct	start_char=80|end_char=81
+
+16	.	.	PUNCT	U		1	punct	1:punct	start_char=109|end_char=110
+
+42	.	.	PUNCT	U		41	punct	41:punct	start_char=266|end_char=267
+
+16	.	.	PUNCT	U		10	punct	10:punct	start_char=94|end_char=95
+
+31	.	.	PUNCT	U		15	punct	15:punct	start_char=198|end_char=199
+
+5	.	.	PUNCT	U		4	punct	4:punct	start_char=26|end_char=27
+
+12	.	.	PUNCT	U		7	punct	7:punct	start_char=60|end_char=61
+
+14	.	.	PUNCT	U		8	punct	8:punct	start_char=75|end_char=76
+
+11	.	.	PUNCT	U		1	punct	1:punct	start_char=57|end_char=58
+
+10	.	.	PUNCT	U		4	punct	4:punct	start_char=50|end_char=51
+
+5	.	.	PUNCT	U		4	punct	4:punct	start_char=31|end_char=32
+
+10	.	.	PUNCT	U		2	punct	2:punct	start_char=55|end_char=56
+
+15	.	.	PUNCT	U		7	punct	7:punct	start_char=88|end_char=89
+
+29	.	.	PUNCT	U		2	punct	2:punct	start_char=138|end_char=139
+
+55	.	.	PUNCT	U		13	punct	13:punct	start_char=290|end_char=291
+
+8	.	.	PUNCT	U		2	punct	2:punct	start_char=36|end_char=37
+
+33	.	.	PUNCT	U		17	punct	17:punct	start_char=194|end_char=195
+
+16	.	.	PUNCT	U		4	punct	4:punct	start_char=105|end_char=106
+
+18	.	.	PUNCT	U		2	punct	2:punct	start_char=111|end_char=112
+
+8	.	.	PUNCT	U		5	punct	5:punct	start_char=48|end_char=49
+
+6	.	.	PUNCT	U		5	punct	5:punct	start_char=32|end_char=33
+
+17	.	.	PUNCT	U		7	punct	7:punct	start_char=96|end_char=97
+
+44	.	.	PUNCT	U		18	punct	18:punct	start_char=242|end_char=243
+
+15	.	.	PUNCT	U		6	punct	6:punct	start_char=89|end_char=90
+
+16	.	.	PUNCT	U		15	punct	15:punct	start_char=97|end_char=98
+
+14	.	.	PUNCT	U		10	punct	10:punct	start_char=77|end_char=78
+
+19	.	.	PUNCT	U		1	punct	1:punct	start_char=96|end_char=97
+
+20	.	.	PUNCT	U		1	punct	1:punct	start_char=113|end_char=114
+
+10	.	.	PUNCT	U		4	punct	4:punct	start_char=45|end_char=46
+
+15	.	.	PUNCT	U		5	punct	5:punct	start_char=107|end_char=108
+
+23	.	.	PUNCT	U		7	punct	7:punct	start_char=100|end_char=101
+
+11	.	.	PUNCT	U		2	punct	2:punct	start_char=77|end_char=78
+
+13	.	.	PUNCT	U		1	punct	1:punct	start_char=96|end_char=97
+
+15	.	.	PUNCT	U		2	punct	2:punct	start_char=71|end_char=72
+
+8	.	.	PUNCT	U		2	punct	2:punct	start_char=56|end_char=57
+
+27	.	.	PUNCT	U		4	punct	4:punct	start_char=150|end_char=151
+
+24	.	.	PUNCT	U		18	punct	18:punct	start_char=118|end_char=119
+
+27	.	.	PUNCT	U		23	punct	23:punct	start_char=110|end_char=111
+
+19	.	.	PUNCT	U		6	punct	6:punct	start_char=121|end_char=122
+
+26	.	.	PUNCT	U		3	punct	3:punct	start_char=144|end_char=145
+
+36	.	.	PUNCT	U		26	punct	26:punct	start_char=189|end_char=190
+
+59	.	.	PUNCT	U		58	punct	58:punct	start_char=315|end_char=316
+
+21	.	.	PUNCT	U		1	punct	1:punct	start_char=145|end_char=146
+
+23	.	.	PUNCT	U		1	punct	1:punct	start_char=144|end_char=145
+
+22	.	.	PUNCT	U		15	punct	15:punct	start_char=117|end_char=118
+
+5	.	.	PUNCT	U		2	punct	2:punct	start_char=30|end_char=31
+
+70	.	.	PUNCT	U		11	punct	11:punct	start_char=411|end_char=412
+
+57	.	.	PUNCT	U		20	punct	20:punct	start_char=325|end_char=326
+
+4	.	.	PUNCT	U		2	punct	2:punct	start_char=23|end_char=24
+
+33	.	.	PUNCT	U		16	punct	16:punct	start_char=203|end_char=204
+
+14	.	.	PUNCT	U		3	punct	3:punct	start_char=87|end_char=88
+
+9	.	.	PUNCT	U		2	punct	2:punct	start_char=43|end_char=44
+
+56	.	.	PUNCT	U		31	punct	31:punct	start_char=354|end_char=355
+
+50	.	.	PUNCT	U		34	punct	34:punct	start_char=326|end_char=327
+
+25	.	.	PUNCT	U		2	punct	2:punct	start_char=156|end_char=157
+
+17	.	.	PUNCT	U		1	punct	1:punct	start_char=94|end_char=95
+
+19	.	.	PUNCT	U		2	punct	2:punct	start_char=111|end_char=112
+
+29	.	.	PUNCT	U		3	punct	3:punct	start_char=205|end_char=206
+
+40	.	.	PUNCT	U		13	punct	13:punct	start_char=203|end_char=204
+
+26	.	.	PUNCT	U		4	punct	4:punct	start_char=164|end_char=165
+
+17	.	.	PUNCT	U		1	punct	1:punct	start_char=94|end_char=95
+
+32	.	.	PUNCT	U		8	punct	8:punct	start_char=181|end_char=182
+
+10	.	.	PUNCT	U		2	punct	2:punct	start_char=55|end_char=56
+
+23	.	.	PUNCT	U		1	punct	1:punct	start_char=117|end_char=118
+
+21	.	.	PUNCT	U		1	punct	1:punct	start_char=128|end_char=129
+
+21	.	.	PUNCT	U		3	punct	3:punct	start_char=113|end_char=114
+
+22	.	.	PUNCT	U		4	punct	4:punct	start_char=129|end_char=130
+
+12	.	.	PUNCT	U		11	punct	11:punct	start_char=80|end_char=81
+
+12	.	.	PUNCT	U		1	punct	1:punct	start_char=71|end_char=72
+
+21	.	.	PUNCT	U		6	punct	6:punct	start_char=113|end_char=114
+
+11	.	.	PUNCT	U		4	punct	4:punct	start_char=60|end_char=61
+
+8	.	.	PUNCT	U		3	punct	3:punct	start_char=31|end_char=32
+
+13	.	.	PUNCT	U		5	punct	5:punct	start_char=67|end_char=68
+
+25	.	.	PUNCT	U		15	punct	15:punct	start_char=155|end_char=156
+
+36	.	.	PUNCT	U		19	punct	19:punct	start_char=201|end_char=202
+
+14	.	.	PUNCT	U		8	punct	8:punct	start_char=72|end_char=73
+
+11	.	.	PUNCT	U		4	punct	4:punct	start_char=66|end_char=67
+
+29	.	.	PUNCT	U		3	punct	3:punct	start_char=122|end_char=123
+
+6	.	.	PUNCT	U		4	punct	4:punct	start_char=32|end_char=33
+
+5	.	.	PUNCT	U		2	punct	2:punct	start_char=27|end_char=28
+
+6	.	.	PUNCT	U		2	punct	2:punct	start_char=28|end_char=29
+
+11	.	.	PUNCT	U		2	punct	2:punct	start_char=53|end_char=54
+
+18	.	.	PUNCT	U		6	punct	6:punct	start_char=108|end_char=109
+
+18	.	.	PUNCT	U		2	punct	2:punct	start_char=87|end_char=88
+
+11	.	.	PUNCT	U		2	punct	2:punct	start_char=41|end_char=42
+
+23	.	.	PUNCT	U		4	punct	4:punct	start_char=134|end_char=135
+
+15	.	.	PUNCT	U		1	punct	1:punct	start_char=68|end_char=69
+
+34	.	.	PUNCT	U		3	punct	3:punct	start_char=159|end_char=160
+
+10	.	.	PUNCT	U		6	punct	6:punct	start_char=50|end_char=51
+
+10	.	.	PUNCT	U		2	punct	2:punct	start_char=54|end_char=55
+
+5	.	.	PUNCT	U		2	punct	2:punct	start_char=20|end_char=21
+
+9	.	.	PUNCT	U		5	punct	5:punct	start_char=35|end_char=36
+
+5	.	.	PUNCT	U		1	punct	1:punct	start_char=18|end_char=19
+
+6	.	.	PUNCT	U		2	punct	2:punct	start_char=34|end_char=35
+
+20	…	…	PUNCT	U		2	punct	2:punct	start_char=96|end_char=97
+
+6	.	.	PUNCT	U		4	punct	4:punct	start_char=28|end_char=29
+
+4	.	.	PUNCT	U		3	punct	3:punct	start_char=22|end_char=23
+
+33	.	.	PUNCT	U		8	punct	8:punct	start_char=167|end_char=168
+
+8	.	.	PUNCT	U		7	punct	7:punct	start_char=39|end_char=40
+
+18	.	.	PUNCT	U		11	punct	11:punct	start_char=65|end_char=66
+
+8	.	.	PUNCT	U		2	punct	2:punct	start_char=51|end_char=52
+
+17	.	.	PUNCT	U		6	punct	6:punct	start_char=83|end_char=84
+
+12	.	.	PUNCT	U		9	punct	9:punct	start_char=54|end_char=55
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=37|end_char=38
+
+12	.	.	PUNCT	U		7	punct	7:punct	start_char=63|end_char=64
+
+9	.	.	PUNCT	U		4	punct	4:punct	start_char=41|end_char=42
+
+27	.	.	PUNCT	U		5	punct	5:punct	start_char=137|end_char=138
+
+12	.	.	PUNCT	U		4	punct	4:punct	start_char=68|end_char=69
+
+6	.	.	PUNCT	U		3	punct	3:punct	start_char=28|end_char=29
+
+6	.	.	PUNCT	U		5	punct	5:punct	start_char=38|end_char=39
+
+4	.	.	PUNCT	U		3	punct	3:punct	start_char=23|end_char=24
+
+12	.	.	PUNCT	U		6	punct	6:punct	start_char=73|end_char=74
+
+8	.	.	PUNCT	U		3	punct	3:punct	start_char=47|end_char=48
+
+5	.	.	PUNCT	U		3	punct	3:punct	start_char=21|end_char=22
+
+20	.	.	PUNCT	U		2	punct	2:punct	start_char=91|end_char=92
+
+7	.	.	PUNCT	U		3	punct	3:punct	start_char=27|end_char=28
+
+14	.	.	PUNCT	U		4	punct	4:punct	start_char=77|end_char=78
+
+9	.	.	PUNCT	U		5	punct	5:punct	start_char=59|end_char=60
+
+26	.	.	PUNCT	U		2	punct	2:punct	start_char=140|end_char=141
+
+6	.	.	PUNCT	U		5	punct	5:punct	start_char=34|end_char=35
+
+9	.	.	PUNCT	U		7	punct	7:punct	start_char=50|end_char=51
+
+11	.	.	PUNCT	U		2	punct	2:punct	start_char=60|end_char=61
+
+11	.	.	PUNCT	U		2	punct	2:punct	start_char=65|end_char=66
+
+16	.	.	PUNCT	U		14	punct	14:punct	start_char=84|end_char=85
+
+11	.	.	PUNCT	U		1	punct	1:punct	start_char=48|end_char=49
+
+16	.	.	PUNCT	U		6	punct	6:punct	start_char=89|end_char=90
+
+10	.	.	PUNCT	U		9	punct	9:punct	start_char=58|end_char=59
+
+14	.	.	PUNCT	U		6	punct	6:punct	start_char=58|end_char=59
+
+28	»	»	PUNCT	U	PunctType=Quot	26	punct	26:punct	start_char=127|end_char=128
+
+18	.	.	PUNCT	U		17	punct	17:punct	start_char=88|end_char=89
+
+12	.	.	PUNCT	U		2	punct	2:punct	start_char=55|end_char=56
+
+9	.	.	PUNCT	U		1	punct	1:punct	start_char=38|end_char=39
+
+14	!	!	PUNCT	U		5	punct	5:punct	start_char=69|end_char=70
+
+7	!	!	PUNCT	U		6	punct	6:punct	start_char=36|end_char=37
+
+21	.	.	PUNCT	U		16	punct	16:punct	start_char=77|end_char=78
+
+14	.	.	PUNCT	U		3	punct	3:punct	start_char=71|end_char=72
+
+14	.	.	PUNCT	U		1	punct	1:punct	start_char=81|end_char=82
+
+4	.	.	PUNCT	U		2	punct	2:punct	start_char=26|end_char=27
+
+21	!	!	PUNCT	U		20	punct	20:punct	start_char=87|end_char=88
+
+20	.	.	PUNCT	U		3	punct	3:punct	start_char=103|end_char=104
+
+9	.	.	PUNCT	U		2	punct	2:punct	start_char=47|end_char=48
+
+9	.	.	PUNCT	U		5	punct	5:punct	start_char=43|end_char=44
+
+17	.	.	PUNCT	U		5	punct	5:punct	start_char=93|end_char=94
+
+12	!	!	PUNCT	U		10	punct	10:punct	start_char=50|end_char=51
+
+5	!	!	PUNCT	U		3	punct	3:punct	start_char=22|end_char=23
+
+14	.	.	PUNCT	U		3	punct	3:punct	start_char=76|end_char=77
+
+7	.	.	PUNCT	U		6	punct	6:punct	start_char=26|end_char=27
+
+7	.	.	PUNCT	U		2	punct	2:punct	start_char=45|end_char=46
+
+21	»	»	PUNCT	U	PunctType=Quot	10	punct	10:punct	start_char=85|end_char=86
+
+39	!	!	PUNCT	U		38	punct	38:punct	start_char=195|end_char=196
+
+7	!	!	PUNCT	U		2	punct	2:punct	start_char=24|end_char=25
+
+3	!	!	PUNCT	U		1	punct	1:punct	start_char=9|end_char=10
+
+5	»	»	PUNCT	U	PunctType=Quot	3	punct	3:punct	start_char=16|end_char=17
+
+18	…	…	PUNCT	U		2	punct	2:punct	start_char=94|end_char=95
+
+18	.	.	PUNCT	U		4	punct	4:punct	start_char=78|end_char=79
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=25|end_char=26
+
+5	.	.	PUNCT	U		3	punct	3:punct	start_char=16|end_char=17
+
+26	.	.	PUNCT	U		2	punct	2:punct	start_char=133|end_char=134
+
+4	.	.	PUNCT	U		3	punct	3:punct	start_char=17|end_char=18
+
+6	.	.	PUNCT	U		5	punct	5:punct	start_char=41|end_char=42
+
+3	.	.	PUNCT	U		1	punct	1:punct	start_char=13|end_char=14
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=5|end_char=6
+
+28	.	.	PUNCT	U		5	punct	5:punct	start_char=127|end_char=128
+
+27	.	.	PUNCT	U		9	punct	9:punct	start_char=156|end_char=157
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=11|end_char=12
+
+9	.	.	PUNCT	U		5	punct	5:punct	start_char=66|end_char=67
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=35|end_char=36
+
+18	.	.	PUNCT	U		6	punct	6:punct	start_char=85|end_char=86
+
+4	.	.	PUNCT	U		3	punct	3:punct	start_char=15|end_char=16
+
+5	.	.	PUNCT	U		2	punct	2:punct	start_char=16|end_char=17
+
+6	.	.	PUNCT	U		2	punct	2:punct	start_char=37|end_char=38
+
+7	.	.	PUNCT	U		6	punct	6:punct	start_char=26|end_char=27
+
+4	.	.	PUNCT	U		3	punct	3:punct	start_char=18|end_char=19
+
+7	.	.	PUNCT	U		3	punct	3:punct	start_char=35|end_char=36
+
+6	.	.	PUNCT	U		2	punct	2:punct	start_char=33|end_char=34
+
+9	.	.	PUNCT	U		6	punct	6:punct	start_char=47|end_char=48
+
+13	.	.	PUNCT	U		4	punct	4:punct	start_char=61|end_char=62
+
+40	.	.	PUNCT	U		10	punct	10:punct	start_char=204|end_char=205
+
+5	.	.	PUNCT	U		3	punct	3:punct	start_char=39|end_char=40
+
+9	.	.	PUNCT	U		4	punct	4:punct	start_char=51|end_char=52
+
+96	.	.	PUNCT	U		81	punct	81:punct	start_char=626|end_char=627
+
+19	.	.	PUNCT	U		9	punct	9:punct	start_char=146|end_char=147
+
+55	.	.	PUNCT	U		51	punct	51:punct	start_char=406|end_char=407
+
+5	:	:	PUNCT	U		4	punct	4:punct	start_char=33|end_char=34
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+57	.	.	PUNCT	U		1	punct	1:punct	start_char=366|end_char=367
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+37	.	.	PUNCT	U		14	punct	14:punct	start_char=280|end_char=281
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+10	.	.	PUNCT	U		4	punct	4:punct	start_char=62|end_char=63
+
+15	.	.	PUNCT	U		2	punct	2:punct	start_char=105|end_char=106
+
+18	.	.	PUNCT	U		1	punct	1:punct	start_char=119|end_char=120
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+40	.	.	PUNCT	U		2	punct	2:punct	start_char=240|end_char=241
+
+16	.	.	PUNCT	U		2	punct	2:punct	start_char=113|end_char=114
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+49	.	.	PUNCT	U		5	punct	5:punct	start_char=330|end_char=331
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+28	.	.	PUNCT	U		2	punct	2:punct	start_char=182|end_char=183
+
+32	.	.	PUNCT	U		2	punct	2:punct	start_char=205|end_char=206
+
+3	.	.	PUNCT	U		1	punct	1:punct	start_char=8|end_char=9
+
+6	будівель	будівля	NOUN	Ncfpgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	5	nmod	5:nmod	start_char=47|end_char=55
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+21	.	.	PUNCT	U		7	punct	7:punct	start_char=172|end_char=173
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+69	.	.	PUNCT	U		7	punct	7:punct	start_char=516|end_char=517
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+51	.	.	PUNCT	U		21	punct	21:punct	start_char=377|end_char=378
+
+55	.	.	PUNCT	U		53	punct	53:punct	start_char=415|end_char=416
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+66	.	.	PUNCT	U		5	punct	5:punct	start_char=458|end_char=459
+
+29	.	.	PUNCT	U		3	punct	3:punct	start_char=208|end_char=209
+
+74	.	.	PUNCT	U		33	punct	33:punct	start_char=526|end_char=527
+
+54	.	.	PUNCT	U		29	punct	29:punct	start_char=394|end_char=395
+
+8	.	.	PUNCT	U		7	punct	7:punct	start_char=43|end_char=44
+
+5	:	:	PUNCT	U		4	punct	4:punct	start_char=33|end_char=34
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+36	.	.	PUNCT	U		1	punct	1:punct	start_char=235|end_char=236
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+42	.	.	PUNCT	U		37	punct	37:punct	start_char=313|end_char=314
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+31	.	.	PUNCT	U		15	punct	15:punct	start_char=229|end_char=230
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+29	.	.	PUNCT	U		1	punct	1:punct	start_char=228|end_char=229
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+13	.	.	PUNCT	U		5	punct	5:punct	start_char=106|end_char=107
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+28	.	.	PUNCT	U		5	punct	5:punct	start_char=235|end_char=236
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+9	.	.	PUNCT	U		3	punct	3:punct	start_char=48|end_char=49
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+18	.	.	PUNCT	U		1	punct	1:punct	start_char=126|end_char=127
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+21	.	.	PUNCT	U		1	punct	1:punct	start_char=140|end_char=141
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+100	.	.	PUNCT	U		1	punct	1:punct	start_char=573|end_char=574
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+34	.	.	PUNCT	U		1	punct	1:punct	start_char=253|end_char=254
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+29	.	.	PUNCT	U		4	punct	4:punct	start_char=212|end_char=213
+
+16	.	.	PUNCT	U		1	punct	1:punct	start_char=118|end_char=119
+
+12	.	.	PUNCT	U		1	punct	1:punct	start_char=105|end_char=106
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+39	.	.	PUNCT	U		15	punct	15:punct	start_char=261|end_char=262
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+56	.	.	PUNCT	U		27	punct	27:punct	start_char=368|end_char=369
+
+33	.	.	PUNCT	U		6	punct	6:punct	start_char=240|end_char=241
+
+31	.	.	PUNCT	U		23	punct	23:punct	start_char=228|end_char=229
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=2|end_char=3
+
+47	.	.	PUNCT	U		10	punct	10:punct	start_char=308|end_char=309
+
+30	:	:	PUNCT	U		29	punct	29:punct	start_char=182|end_char=183
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+20	.	.	PUNCT	U		1	punct	1:punct	start_char=120|end_char=121
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+70	.	.	PUNCT	U		1	punct	1:punct	start_char=461|end_char=462
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+31	.	.	PUNCT	U		21	punct	21:punct	start_char=201|end_char=202
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+132	.	.	PUNCT	U		109	punct	109:punct	start_char=794|end_char=795
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+50	.	.	PUNCT	U		30	punct	30:punct	start_char=267|end_char=268
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+30	.	.	PUNCT	U		1	punct	1:punct	start_char=182|end_char=183
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+10	.	.	PUNCT	U		3	punct	3:punct	start_char=62|end_char=63
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+14	.	.	PUNCT	U		6	punct	6:punct	start_char=83|end_char=84
+
+94	.	.	PUNCT	U		72	punct	72:punct	start_char=662|end_char=663
+
+86	.	.	PUNCT	U		3	punct	3:punct	start_char=645|end_char=646
+
+61	.	.	PUNCT	U		14	punct	14:punct	start_char=354|end_char=355
+
+9	.	.	PUNCT	U		8	punct	8:punct	start_char=68|end_char=69
+
+60	.	.	PUNCT	U		19	punct	19:punct	start_char=426|end_char=427
+
+90	.	.	PUNCT	U		16	punct	16:punct	start_char=629|end_char=630
+
+28	.	.	PUNCT	U		8	punct	8:punct	start_char=236|end_char=237
+
+51	.	.	PUNCT	U		4	punct	4:punct	start_char=372|end_char=373
+
+56	.	.	PUNCT	U		11	punct	11:punct	start_char=329|end_char=330
+
+140	.	.	PUNCT	U		6	punct	6:punct	start_char=874|end_char=875
+
+61	.	.	PUNCT	U		29	punct	29:punct	start_char=428|end_char=429
+
+63	.	.	PUNCT	U		7	punct	7:punct	start_char=512|end_char=513
+
+6	.	.	PUNCT	U		1	punct	1:punct	start_char=20|end_char=21
+
+11	.	.	PUNCT	U		6	punct	6:punct	start_char=73|end_char=74
+
+9	.	.	PUNCT	U		4	punct	4:punct	start_char=27|end_char=28
+
+2	)	)	PUNCT	U		1	punct	1:punct	start_char=6|end_char=7
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=15|end_char=16
+
+17	)	)	PUNCT	U		15	punct	15:punct	start_char=68|end_char=69
+
+6	.	.	PUNCT	U		3	punct	3:punct	start_char=28|end_char=29
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=39|end_char=40
+
+14	.	.	PUNCT	U		4	punct	4:punct	start_char=81|end_char=82
+
+12	.	.	PUNCT	U		6	punct	6:punct	start_char=46|end_char=47
+
+8	.	.	PUNCT	U		1	punct	1:punct	start_char=34|end_char=35
+
+6	.	.	PUNCT	U		5	punct	5:punct	start_char=27|end_char=28
+
+12	.	.	PUNCT	U		3	punct	3:punct	start_char=62|end_char=63
+
+15	.	.	PUNCT	U		1	punct	1:punct	start_char=54|end_char=55
+
+12	.	.	PUNCT	U		3	punct	3:punct	start_char=63|end_char=64
+
+8	.	.	PUNCT	U		7	punct	7:punct	start_char=30|end_char=31
+
+20	.	.	PUNCT	U		9	punct	9:punct	start_char=83|end_char=84
+
+7	.	.	PUNCT	U		6	punct	6:punct	start_char=27|end_char=28
+
+14	.	.	PUNCT	U		12	punct	12:punct	start_char=55|end_char=56
+
+14	.	.	PUNCT	U		5	punct	5:punct	start_char=89|end_char=90
+
+5	tender@dominos.ua	tender@dominos.ua	SYM	X		3	discourse	3:discourse	start_char=28|end_char=45
+
+29	.	.	PUNCT	U		11	punct	11:punct	start_char=171|end_char=172
+
+4	Пуриченко	Пуриченко	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	1	flat:name	1:flat:name	start_char=12|end_char=21
+
+10	.	.	PUNCT	U		7	punct	7:punct	start_char=47|end_char=48
+
+13	.	.	PUNCT	U		1	punct	1:punct	start_char=60|end_char=61
+
+9	.	.	PUNCT	U		8	punct	8:punct	start_char=74|end_char=75
+
+4	захищені	захищений	ADJ	Ap--pns-ep	Aspect=Perf|Case=Nom|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	start_char=12|end_char=20
+
+8	.	.	PUNCT	U		2	punct	2:punct	start_char=29|end_char=30
+
+4	...	...	PUNCT	U		3	punct	3:punct	start_char=14|end_char=17
+
+6	!	!	PUNCT	U		5	punct	5:punct	start_char=24|end_char=25
+
+8	.	.	PUNCT	U		6	punct	6:punct	start_char=28|end_char=29
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=9|end_char=10
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=2|end_char=3
+
+3	.	.	PUNCT	U		1	punct	1:punct	start_char=8|end_char=9
+
+11	.	.	PUNCT	U		7	punct	7:punct	start_char=53|end_char=54
+
+9	гелькою	гелький	ADJ	Afpfsif	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	7	obl	7:obl	start_char=35|end_char=42
+
+4	.	.	PUNCT	U		1	punct	1:punct	start_char=19|end_char=20
+
+14	.	.	PUNCT	U		6	punct	6:punct	start_char=69|end_char=70
+
+11	.	.	PUNCT	U		5	punct	5:punct	start_char=66|end_char=67
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=6|end_char=7
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=12|end_char=13
+
+21	.	.	PUNCT	U		5	punct	5:punct	start_char=110|end_char=111
+
+20	"	"	PUNCT	U	PunctType=Quot	15	punct	15:punct	start_char=99|end_char=100
+
+5	.	.	PUNCT	U		1	punct	1:punct	start_char=25|end_char=26
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=16|end_char=17
+
+12	!	!	PUNCT	U		11	punct	11:punct	start_char=53|end_char=54
+
+15	.	.	PUNCT	U		11	punct	11:punct	start_char=77|end_char=78
+
+7	.....	.....	PUNCT	U		3	punct	3:punct	start_char=45|end_char=50
+
+4	...	...	PUNCT	U		2	punct	2:punct	start_char=14|end_char=17
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=8|end_char=9
+
+12	цеху	цех	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	9	nmod	9:nmod	start_char=71|end_char=75
+
+4	.	.	PUNCT	U		1	punct	1:punct	start_char=20|end_char=21
+
+7	!	!	PUNCT	U		6	punct	6:punct	start_char=29|end_char=30
+
+24	!	!	PUNCT	U		6	punct	6:punct	start_char=130|end_char=131
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=14|end_char=15
+
+23	...	...	PUNCT	U		7	punct	7:punct	start_char=157|end_char=160
+
+15	:)	:)	SYM	X		11	discourse	11:discourse	start_char=74|end_char=76
+
+13	?	?	PUNCT	U		2	punct	2:punct	start_char=67|end_char=68
+
+8	?	?	PUNCT	U		3	punct	3:punct	start_char=37|end_char=38
+
+6	?	?	PUNCT	U		2	punct	2:punct	start_char=35|end_char=36
+
+7	?	?	PUNCT	U		4	punct	4:punct	start_char=34|end_char=35
+
+4	?	?	PUNCT	U		1	punct	1:punct	start_char=13|end_char=14
+
+2	?	?	PUNCT	U		1	punct	1:punct	start_char=5|end_char=6
+
+24	.	.	PUNCT	U		6	punct	6:punct	start_char=124|end_char=125
+
+20	.	.	PUNCT	U		2	punct	2:punct	start_char=164|end_char=165
+
+34	.	.	PUNCT	U		9	punct	9:punct	start_char=200|end_char=201
+
+12	.	.	PUNCT	U		3	punct	3:punct	start_char=90|end_char=91
+
+10	.	.	PUNCT	U		2	punct	2:punct	start_char=32|end_char=33
+
+4	.	.	PUNCT	U		3	punct	3:punct	start_char=29|end_char=30
+
+19	.	.	PUNCT	U		3	punct	3:punct	start_char=115|end_char=116
+
+9	.	.	PUNCT	U		7	punct	7:punct	start_char=37|end_char=38
+
+5	.	.	PUNCT	U		3	punct	3:punct	start_char=14|end_char=15
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=3|end_char=4
+
+9	.	.	PUNCT	U		6	punct	6:punct	start_char=50|end_char=51
+
+13	.	.	PUNCT	U		7	punct	7:punct	start_char=52|end_char=53
+
+19	.	.	PUNCT	U		16	punct	16:punct	start_char=70|end_char=71
+
+17	.	.	PUNCT	U		15	punct	15:punct	start_char=63|end_char=64
+
+6	.	.	PUNCT	U		2	punct	2:punct	start_char=23|end_char=24
+
+15	.	.	PUNCT	U		3	punct	3:punct	start_char=66|end_char=67
+
+5	.	.	PUNCT	U		2	punct	2:punct	start_char=26|end_char=27
+
+18	.	.	PUNCT	U		14	punct	14:punct	start_char=91|end_char=92
+
+4	?	?	PUNCT	U		2	punct	2:punct	start_char=23|end_char=24
+
+30	.	.	PUNCT	U		5	punct	5:punct	start_char=173|end_char=174
+
+11	…	…	PUNCT	U		6	punct	6:punct	start_char=48|end_char=49
+
+2	!	!	PUNCT	U		1	punct	1:punct	start_char=9|end_char=10
+
+25	.	.	PUNCT	U		1	punct	1:punct	start_char=117|end_char=118
+
+10	.	.	PUNCT	U		9	punct	9:punct	start_char=51|end_char=52
+
+8	!	!	PUNCT	U		2	punct	2:punct	start_char=36|end_char=37
+
+4	!	!	PUNCT	U		3	punct	3:punct	start_char=22|end_char=23
+
+4	!	!	PUNCT	U		2	punct	2:punct	start_char=18|end_char=19
+
+11	Таяні	Таяна	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing|Uninflect=Yes	10	flat:name	10:flat:name	start_char=88|end_char=93
+
+21	.	.	PUNCT	U		2	punct	2:punct	start_char=116|end_char=117
+
+22	.	.	PUNCT	U		16	punct	16:punct	start_char=131|end_char=132
+
+8	Україні	Україна	PROPN	Npfsln	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	5	obl	5:obl	start_char=54|end_char=61
+
+31	.	.	PUNCT	U		6	punct	6:punct	start_char=197|end_char=198
+
+17	.	.	PUNCT	U		3	punct	3:punct	start_char=72|end_char=73
+
+17	.	.	PUNCT	U		3	punct	3:punct	start_char=103|end_char=104
+
+45	.	.	PUNCT	U		2	punct	2:punct	start_char=302|end_char=303
+
+8	.	.	PUNCT	U		3	punct	3:punct	start_char=43|end_char=44
+
+15	.	.	PUNCT	U		2	punct	2:punct	start_char=101|end_char=102
+
+7	.	.	PUNCT	U		6	punct	6:punct	start_char=45|end_char=46
+
+17	.	.	PUNCT	U		7	punct	7:punct	start_char=112|end_char=113
+
+23	.	.	PUNCT	U		2	punct	2:punct	start_char=128|end_char=129
+
+7	.	.	PUNCT	U		5	punct	5:punct	start_char=40|end_char=41
+
+15	.	.	PUNCT	U		3	punct	3:punct	start_char=72|end_char=73
+
+8	.	.	PUNCT	U		7	punct	7:punct	start_char=50|end_char=51
+
+20	.	.	PUNCT	U		9	punct	9:punct	start_char=127|end_char=128
+
+27	.	.	PUNCT	U		9	punct	9:punct	start_char=177|end_char=178
+
+27	.	.	PUNCT	U		26	punct	26:punct	start_char=136|end_char=137
+
+24	.	.	PUNCT	U		3	punct	3:punct	start_char=95|end_char=96
+
+28	.	.	PUNCT	U		1	punct	1:punct	start_char=150|end_char=151
+
+10	.	.	PUNCT	U		6	punct	6:punct	start_char=38|end_char=39
+
+34	.	.	PUNCT	U		17	punct	17:punct	start_char=193|end_char=194
+
+26	.	.	PUNCT	U		5	punct	5:punct	start_char=134|end_char=135
+
+11	.	.	PUNCT	U		5	punct	5:punct	start_char=50|end_char=51
+
+40	.	.	PUNCT	U		8	punct	8:punct	start_char=197|end_char=198
+
+14	.	.	PUNCT	U		12	punct	12:punct	start_char=61|end_char=62
+
+35	.	.	PUNCT	U		7	punct	7:punct	start_char=173|end_char=174
+
+41	.	.	PUNCT	U		7	punct	7:punct	start_char=274|end_char=275
+
+16	.	.	PUNCT	U		14	punct	14:punct	start_char=82|end_char=83
+
+44	.	.	PUNCT	U		40	punct	40:punct	start_char=217|end_char=218
+
+26	.	.	PUNCT	U		4	punct	4:punct	start_char=128|end_char=129
+
+6	.	.	PUNCT	U		4	punct	4:punct	start_char=38|end_char=39
+
+10	.	.	PUNCT	U		7	punct	7:punct	start_char=59|end_char=60
+
+15	.	.	PUNCT	U		1	punct	1:punct	start_char=100|end_char=101
+
+27	.	.	PUNCT	U		25	punct	25:punct	start_char=127|end_char=128
+
+7	гривень	гривня	NOUN	Ncfpgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	6	nmod	6:nmod	start_char=36|end_char=43
+
+21	.	.	PUNCT	U		10	punct	10:punct	start_char=128|end_char=129
+
+16	.	.	PUNCT	U		3	punct	3:punct	start_char=82|end_char=83
+
+18	.	.	PUNCT	U		12	punct	12:punct	start_char=120|end_char=121
+
+35	.	.	PUNCT	U		21	punct	21:punct	start_char=168|end_char=169
+
+20	.	.	PUNCT	U		12	punct	12:punct	start_char=122|end_char=123
+
+42	.	.	PUNCT	U		2	punct	2:punct	start_char=153|end_char=154
+
+27	.	.	PUNCT	U		8	punct	8:punct	start_char=138|end_char=139
+
+20	.	.	PUNCT	U		3	punct	3:punct	start_char=137|end_char=138
+
+12	палива	паливо	NOUN	Ncnsgn	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	11	nmod	11:nmod	start_char=72|end_char=78
+
+28	.	.	PUNCT	U		3	punct	3:punct	start_char=194|end_char=195
+
+26	.	.	PUNCT	U		4	punct	4:punct	start_char=166|end_char=167
+
+47	.	.	PUNCT	U		5	punct	5:punct	start_char=229|end_char=230
+
+20	.	.	PUNCT	U		4	punct	4:punct	start_char=143|end_char=144
+
+13	.	.	PUNCT	U		12	punct	12:punct	start_char=73|end_char=74
+
+43	.	.	PUNCT	U		38	punct	38:punct	start_char=251|end_char=252
+
+26	.	.	PUNCT	U		9	punct	9:punct	start_char=137|end_char=138
+
+10	.	.	PUNCT	U		3	punct	3:punct	start_char=60|end_char=61
+
+16	.	.	PUNCT	U		8	punct	8:punct	start_char=97|end_char=98
+
+16	.	.	PUNCT	U		2	punct	2:punct	start_char=95|end_char=96
+
+13	.	.	PUNCT	U		7	punct	7:punct	start_char=82|end_char=83
+
+40	.	.	PUNCT	U		3	punct	3:punct	start_char=165|end_char=166
+
+11	.	.	PUNCT	U		4	punct	4:punct	start_char=66|end_char=67
+
+16	.	.	PUNCT	U		1	punct	1:punct	start_char=94|end_char=95
+
+7	.	.	PUNCT	U		3	punct	3:punct	start_char=33|end_char=34
+
+36	.	.	PUNCT	U		2	punct	2:punct	start_char=216|end_char=217
+
+24	них	вони	PRON	Pp-3--pgn	Case=Gen|Number=Plur|Person=3|PronType=Prs	22	obl	22:obl	start_char=133|end_char=136
+
+30	.	.	PUNCT	U		14	punct	14:punct	start_char=184|end_char=185
+
+16	.	.	PUNCT	U		8	punct	8:punct	start_char=73|end_char=74
+
+13	фотографам	фотограф	NOUN	Ncfpdn	Animacy=Inan|Case=Dat|Gender=Fem|Number=Plur	12	obj	12:obj	start_char=65|end_char=75
+
+9	.	.	PUNCT	U		5	punct	5:punct	start_char=39|end_char=40
+
+38	.	.	PUNCT	U		8	punct	8:punct	start_char=209|end_char=210
+
+29	.	.	PUNCT	U		16	punct	16:punct	start_char=149|end_char=150
+
+17	.	.	PUNCT	U		14	punct	14:punct	start_char=78|end_char=79
+
+10	.	.	PUNCT	U		5	punct	5:punct	start_char=56|end_char=57
+
+17	.	.	PUNCT	U		6	punct	6:punct	start_char=106|end_char=107
+
+21	.	.	PUNCT	U		15	punct	15:punct	start_char=110|end_char=111
+
+17	.	.	PUNCT	U		1	punct	1:punct	start_char=85|end_char=86
+
+6	.	.	PUNCT	U		4	punct	4:punct	start_char=42|end_char=43
+
+14	.	.	PUNCT	U		11	punct	11:punct	start_char=72|end_char=73
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=39|end_char=40
+
+11	.	.	PUNCT	U		1	punct	1:punct	start_char=61|end_char=62
+
+16	.	.	PUNCT	U		5	punct	5:punct	start_char=86|end_char=87
+
+9	.	.	PUNCT	U		4	punct	4:punct	start_char=54|end_char=55
+
+10	.	.	PUNCT	U		6	punct	6:punct	start_char=56|end_char=57
+
+8	.	.	PUNCT	U		4	punct	4:punct	start_char=42|end_char=43
+
+11	.	.	PUNCT	U		1	punct	1:punct	start_char=63|end_char=64
+
+7	!	!	PUNCT	U		4	punct	4:punct	start_char=38|end_char=39
+
+8	.	.	PUNCT	U		3	punct	3:punct	start_char=42|end_char=43
+
+7	.	.	PUNCT	U		3	punct	3:punct	start_char=35|end_char=36
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=45|end_char=46
+
+13	.	.	PUNCT	U		1	punct	1:punct	start_char=56|end_char=57
+
+10	.	.	PUNCT	U		2	punct	2:punct	start_char=45|end_char=46
+
+11	.	.	PUNCT	U		2	punct	2:punct	start_char=55|end_char=56
+
+11	.	.	PUNCT	U		4	punct	4:punct	start_char=62|end_char=63
+
+18	.	.	PUNCT	U		10	punct	10:punct	start_char=97|end_char=98
+
+17	.	.	PUNCT	U		3	punct	3:punct	start_char=92|end_char=93
+
+8	.	.	PUNCT	U		2	punct	2:punct	start_char=43|end_char=44
+
+19	.	.	PUNCT	U		6	punct	6:punct	start_char=99|end_char=100
+
+9	.	.	PUNCT	U		6	punct	6:punct	start_char=52|end_char=53
+
+14	.	.	PUNCT	U		9	punct	9:punct	start_char=82|end_char=83
+
+16	.	.	PUNCT	U		12	punct	12:punct	start_char=75|end_char=76
+
+6	.	.	PUNCT	U		3	punct	3:punct	start_char=30|end_char=31
+
+13	.	.	PUNCT	U		6	punct	6:punct	start_char=82|end_char=83
+
+12	...	...	PUNCT	U		8	punct	8:punct	start_char=71|end_char=74
+
+12	.	.	PUNCT	U		4	punct	4:punct	start_char=61|end_char=62
+
+55	.	.	PUNCT	U		19	punct	19:punct	start_char=251|end_char=252
+
+8	.	.	PUNCT	U		4	punct	4:punct	start_char=63|end_char=64
+
+24	.	.	PUNCT	U		19	punct	19:punct	start_char=116|end_char=117
+
+18	.	.	PUNCT	U		9	punct	9:punct	start_char=107|end_char=108
+
+21	.	.	PUNCT	U		11	punct	11:punct	start_char=131|end_char=132
+
+10	.	.	PUNCT	U		5	punct	5:punct	start_char=73|end_char=74
+
+42	.	.	PUNCT	U		8	punct	8:punct	start_char=253|end_char=254
+
+18	.	.	PUNCT	U		6	punct	6:punct	start_char=94|end_char=95
+
+49	.	.	PUNCT	U		10	punct	10:punct	start_char=208|end_char=209
+
+21	.	.	PUNCT	U		5	punct	5:punct	start_char=62|end_char=63
+
+37	.	.	PUNCT	U		9	punct	9:punct	start_char=138|end_char=139
+
+28	.	.	PUNCT	U		27	punct	27:punct	start_char=174|end_char=175
+
+35	.	.	PUNCT	U		18	punct	18:punct	start_char=223|end_char=224
+
+30	.	.	PUNCT	U		12	punct	12:punct	start_char=186|end_char=187
+
+14	.	.	PUNCT	U		6	punct	6:punct	start_char=60|end_char=61
+
+29	.	.	PUNCT	U		21	punct	21:punct	start_char=202|end_char=203
+
+22	.	.	PUNCT	U		6	punct	6:punct	start_char=103|end_char=104
+
+16	.	.	PUNCT	U		3	punct	3:punct	start_char=102|end_char=103
+
+22	.	.	PUNCT	U		10	punct	10:punct	start_char=149|end_char=150
+
+27	.	.	PUNCT	U		11	punct	11:punct	start_char=152|end_char=153
+
+32	.	.	PUNCT	U		5	punct	5:punct	start_char=192|end_char=193
+
+31	.	.	PUNCT	U		10	punct	10:punct	start_char=194|end_char=195
+
+21	.	.	PUNCT	U		5	punct	5:punct	start_char=138|end_char=139
+
+9	.	.	PUNCT	U		7	punct	7:punct	start_char=62|end_char=63
+
+25	.	.	PUNCT	U		13	punct	13:punct	start_char=177|end_char=178
+
+34	.	.	PUNCT	U		3	punct	3:punct	start_char=234|end_char=235
+
+19	.	.	PUNCT	U		18	punct	18:punct	start_char=134|end_char=135
+
+16	.	.	PUNCT	U		12	punct	12:punct	start_char=106|end_char=107
+
+22	.	.	PUNCT	U		9	punct	9:punct	start_char=124|end_char=125
+
+17	.	.	PUNCT	U		7	punct	7:punct	start_char=115|end_char=116
+
+16	.	.	PUNCT	U		14	punct	14:punct	start_char=112|end_char=113
+
+9	.	.	PUNCT	U		3	punct	3:punct	start_char=79|end_char=80
+
+27	.	.	PUNCT	U		13	punct	13:punct	start_char=153|end_char=154
+
+22	.	.	PUNCT	U		4	punct	4:punct	start_char=205|end_char=206
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+80	.	.	PUNCT	U		10	punct	10:punct	start_char=462|end_char=463
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=1|end_char=2
+
+26	.	.	PUNCT	U		4	punct	4:punct	start_char=169|end_char=170
+
+65	!	!	PUNCT	U		55	punct	55:punct	start_char=405|end_char=406
+
+19	.	.	PUNCT	U		4	punct	4:punct	start_char=108|end_char=109
+
+9	.	.	PUNCT	U		1	punct	1:punct	start_char=50|end_char=51
+
+12	.	.	PUNCT	U		6	punct	6:punct	start_char=49|end_char=50
+
+18	.	.	PUNCT	U		2	punct	2:punct	start_char=85|end_char=86
+
+35	.	.	PUNCT	U		32	punct	32:punct	start_char=201|end_char=202
+
+24	.	.	PUNCT	U		1	punct	1:punct	start_char=139|end_char=140
+
+18	.	.	PUNCT	U		13	punct	13:punct	start_char=116|end_char=117
+
+13	.	.	PUNCT	U		11	punct	11:punct	start_char=69|end_char=70
+
+15	.	.	PUNCT	U		4	punct	4:punct	start_char=104|end_char=105
+
+16	.	.	PUNCT	U		10	punct	10:punct	start_char=99|end_char=100
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=52|end_char=53
+
+5	.	.	PUNCT	U		3	punct	3:punct	start_char=34|end_char=35
+
+12	.	.	PUNCT	U		1	punct	1:punct	start_char=59|end_char=60
+
+28	.	.	PUNCT	U		23	punct	23:punct	start_char=185|end_char=186
+
+19	.	.	PUNCT	U		2	punct	2:punct	start_char=109|end_char=110
+
+45	.	.	PUNCT	U		11	punct	11:punct	start_char=294|end_char=295
+
+24	.	.	PUNCT	U		2	punct	2:punct	start_char=145|end_char=146
+
+21	.	.	PUNCT	U		3	punct	3:punct	start_char=111|end_char=112
+
+24	.	.	PUNCT	U		16	punct	16:punct	start_char=152|end_char=153
+
+16	.	.	PUNCT	U		7	punct	7:punct	start_char=67|end_char=68
+
+9	.	.	PUNCT	U		8	punct	8:punct	start_char=50|end_char=51
+
+17	.	.	PUNCT	U		4	punct	4:punct	start_char=70|end_char=71
+
+10	.	.	PUNCT	U		8	punct	8:punct	start_char=38|end_char=39
+
+23	.	.	PUNCT	U		17	punct	17:punct	start_char=157|end_char=158
+
+41	.	.	PUNCT	U		10	punct	10:punct	start_char=234|end_char=235
+
+49	.	.	PUNCT	U		35	punct	35:punct	start_char=276|end_char=277
+
+17	.	.	PUNCT	U		2	punct	2:punct	start_char=91|end_char=92
+
+4	.	.	PUNCT	U		3	punct	3:punct	start_char=10|end_char=11
+
+28	.	.	PUNCT	U		4	punct	4:punct	start_char=161|end_char=162
+
+24	.	.	PUNCT	U		2	punct	2:punct	start_char=145|end_char=146
+
+10	?	?	PUNCT	U		2	punct	2:punct	start_char=56|end_char=57
+
+12	.	.	PUNCT	U		4	punct	4:punct	start_char=65|end_char=66
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=11|end_char=12
+
+20	.	.	PUNCT	U		7	punct	7:punct	start_char=107|end_char=108
+
+19	.	.	PUNCT	U		6	punct	6:punct	start_char=89|end_char=90
+
+24	.	.	PUNCT	U		12	punct	12:punct	start_char=149|end_char=150
+
+35	.	.	PUNCT	U		17	punct	17:punct	start_char=148|end_char=149
+
+23	.	.	PUNCT	U		2	punct	2:punct	start_char=140|end_char=141
+
+31	.	.	PUNCT	U		1	punct	1:punct	start_char=108|end_char=109
+
+26	.	.	PUNCT	U		5	punct	5:punct	start_char=128|end_char=129
+
+23	.	.	PUNCT	U		2	punct	2:punct	start_char=136|end_char=137
+
+13	.	.	PUNCT	U		8	punct	8:punct	start_char=64|end_char=65
+
+26	.	.	PUNCT	U		9	punct	9:punct	start_char=101|end_char=102
+
+22	.	.	PUNCT	U		16	punct	16:punct	start_char=112|end_char=113
+
+17	.	.	PUNCT	U		14	punct	14:punct	start_char=131|end_char=132
+
+18	.	.	PUNCT	U		7	punct	7:punct	start_char=127|end_char=128
+
+7	.	.	PUNCT	U		2	punct	2:punct	start_char=50|end_char=51
+
+48	.	.	PUNCT	U		21	punct	21:punct	start_char=253|end_char=254
+
+24	.	.	PUNCT	U		3	punct	3:punct	start_char=117|end_char=118
+
+31	.	.	PUNCT	U		17	punct	17:punct	start_char=229|end_char=230
+
+33	.	.	PUNCT	U		14	punct	14:punct	start_char=188|end_char=189
+
+16	.	.	PUNCT	U		7	punct	7:punct	start_char=111|end_char=112
+
+18	.	.	PUNCT	U		10	punct	10:punct	start_char=142|end_char=143
+
+38	.	.	PUNCT	U		3	punct	3:punct	start_char=201|end_char=202
+
+28	.	.	PUNCT	U		4	punct	4:punct	start_char=149|end_char=150
+
+40	.	.	PUNCT	U		11	punct	11:punct	start_char=193|end_char=194
+
+16	.	.	PUNCT	U		7	punct	7:punct	start_char=72|end_char=73
+
+12	.	.	PUNCT	U		5	punct	5:punct	start_char=73|end_char=74
+
+26	.	.	PUNCT	U		6	punct	6:punct	start_char=118|end_char=119
+
+27	.	.	PUNCT	U		7	punct	7:punct	start_char=145|end_char=146
+
+32	.	.	PUNCT	U		4	punct	4:punct	start_char=128|end_char=129
+
+48	.	.	PUNCT	U		13	punct	13:punct	start_char=254|end_char=255
+
+32	.	.	PUNCT	U		11	punct	11:punct	start_char=173|end_char=174
+
+25	.	.	PUNCT	U		1	punct	1:punct	start_char=140|end_char=141
+
+12	.	.	PUNCT	U		8	punct	8:punct	start_char=61|end_char=62
+
+36	.	.	PUNCT	U		4	punct	4:punct	start_char=220|end_char=221
+
+8	...	...	PUNCT	U		1	punct	1:punct	start_char=32|end_char=35
+
+5	.	.	PUNCT	U		4	punct	4:punct	start_char=22|end_char=23
+
+6	)	)	PUNCT	U		2	punct	2:punct	start_char=17|end_char=18
+
+4	.	.	PUNCT	U		3	punct	3:punct	start_char=9|end_char=10
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=7|end_char=8
+
+12	.	.	PUNCT	U		3	punct	3:punct	start_char=54|end_char=55
+
+4	)	)	PUNCT	U		2	punct	2:punct	start_char=7|end_char=8
+
+6	...	...	PUNCT	U		2	punct	2:punct	start_char=23|end_char=26
+
+4	!	!	PUNCT	U		3	punct	3:punct	start_char=6|end_char=7
+
+4	!	!	PUNCT	U		1	punct	1:punct	start_char=10|end_char=11
+
+5	)	)	PUNCT	U		3	punct	3:punct	start_char=10|end_char=11
+
+9	.	.	PUNCT	U		1	punct	1:punct	start_char=36|end_char=37
+
+5	.	.	PUNCT	U		3	punct	3:punct	start_char=22|end_char=23
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=3|end_char=4
+
+18	)	)	PUNCT	U		2	punct	2:punct	start_char=67|end_char=68
+
+2	!	!	PUNCT	U		1	punct	1:punct	start_char=2|end_char=3
+
+2	!	!	PUNCT	U		1	punct	1:punct	start_char=8|end_char=9
+
+9	)	)	PUNCT	U		2	punct	2:punct	start_char=34|end_char=35
+
+5	!	!	PUNCT	U		1	punct	1:punct	start_char=22|end_char=23
+
+8	.	.	PUNCT	U		1	punct	1:punct	start_char=32|end_char=33
+
+4	)	)	PUNCT	U		2	punct	2:punct	start_char=7|end_char=8
+
+31	!	!	PUNCT	U		2	punct	2:punct	start_char=180|end_char=181
+
+36	...	...	PUNCT	U		32	punct	32:punct	start_char=182|end_char=185
+
+24	?	?	PUNCT	U		11	punct	11:punct	start_char=142|end_char=143
+
+33	.	.	PUNCT	U		2	punct	2:punct	start_char=136|end_char=137
+
+12	.	.	PUNCT	U		4	punct	4:punct	start_char=64|end_char=65
+
+14	.	.	PUNCT	U		7	punct	7:punct	start_char=58|end_char=59
+
+53	…	…	PUNCT	U		15	punct	15:punct	start_char=308|end_char=309
+
+33	...	...	PUNCT	U		3	punct	3:punct	start_char=200|end_char=203
+
+1	...	...	PUNCT	U		0	root	0:root	start_char=0|end_char=3
+
+17	.	.	PUNCT	U		4	punct	4:punct	start_char=113|end_char=114
+
+40	.	.	PUNCT	U		2	punct	2:punct	start_char=205|end_char=206
+
+29	.	.	PUNCT	U		5	punct	5:punct	start_char=139|end_char=140
+
+10	.	.	PUNCT	U		1	punct	1:punct	start_char=66|end_char=67
+
+28	…	…	PUNCT	U		21	punct	21:punct	start_char=146|end_char=147
+
+38	.	.	PUNCT	U		22	punct	22:punct	start_char=189|end_char=190
+
+40	?	?	PUNCT	U		12	punct	12:punct	start_char=193|end_char=194
+
+3	.	.	PUNCT	U		2	punct	2:punct	start_char=11|end_char=12
+
+24	?	?	PUNCT	U		10	punct	10:punct	start_char=151|end_char=152
+
+26	.	.	PUNCT	U		20	punct	20:punct	start_char=152|end_char=153
+
+38	.	.	PUNCT	U		7	punct	7:punct	start_char=207|end_char=208
+
+14	?	?	PUNCT	U		2	punct	2:punct	start_char=68|end_char=69
+
+9	?	?	PUNCT	U		8	punct	8:punct	start_char=57|end_char=58
+
+18	?	?	PUNCT	U		3	punct	3:punct	start_char=103|end_char=104
+
+12	.	.	PUNCT	U		9	punct	9:punct	start_char=51|end_char=52
+
+30	.	.	PUNCT	U		20	punct	20:punct	start_char=172|end_char=173
+
+20	.	.	PUNCT	U		4	punct	4:punct	start_char=117|end_char=118
+
+19	.	.	PUNCT	U		7	punct	7:punct	start_char=103|end_char=104
+
+22	?	?	PUNCT	U		19	punct	19:punct	start_char=91|end_char=92
+
+4	?	?	PUNCT	U		3	punct	3:punct	start_char=15|end_char=16
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=29|end_char=30
+
+34	.	.	PUNCT	U		4	punct	4:punct	start_char=163|end_char=164
+
+26	.	.	PUNCT	U		4	punct	4:punct	start_char=124|end_char=125
+
+8	.	.	PUNCT	U		4	punct	4:punct	start_char=45|end_char=46
+
+13	.	.	PUNCT	U		3	punct	3:punct	start_char=57|end_char=58
+
+6	.	.	PUNCT	U		2	punct	2:punct	start_char=11|end_char=12
+
+5	))))	))))	SYM	X		4	discourse	4:discourse	start_char=22|end_char=26
+
+16	?	?	PUNCT	U		1	punct	1:punct	start_char=73|end_char=74
+
+6	)	)	PUNCT	U		2	discourse	2:discourse	start_char=27|end_char=28
+
+2	))	))	SYM	X		1	flat	1:flat	start_char=3|end_char=5
+
+4	)	)	SYM	X		1	discourse	1:discourse	start_char=19|end_char=20
+
+21	.	.	PUNCT	U		20	punct	20:punct	start_char=117|end_char=118
+
+26	.	.	PUNCT	U		1	punct	1:punct	start_char=137|end_char=138
+
+29	.	.	PUNCT	U		11	punct	11:punct	start_char=267|end_char=268
+
+16	.	.	PUNCT	U		13	punct	13:punct	start_char=98|end_char=99
+
+19	.	.	PUNCT	U		8	punct	8:punct	start_char=133|end_char=134
+
+11	.	.	PUNCT	U		9	punct	9:punct	start_char=72|end_char=73
+
+15	.	.	PUNCT	U		11	punct	11:punct	start_char=80|end_char=81
+
+35	.	.	PUNCT	U		3	punct	3:punct	start_char=215|end_char=216
+
+25	.	.	PUNCT	U		14	punct	14:punct	start_char=134|end_char=135
+
+20	.	.	PUNCT	U		6	punct	6:punct	start_char=114|end_char=115
+
+102	.	.	PUNCT	U		2	punct	2:punct	start_char=682|end_char=683
+
+14	.	.	PUNCT	U		1	punct	1:punct	start_char=76|end_char=77
+
+7	.	.	PUNCT	U		2	punct	2:punct	start_char=41|end_char=42
+
+20	:)	:)	SYM	X		19	discourse	19:discourse	start_char=107|end_char=109
+
+11	.	.	PUNCT	U		4	punct	4:punct	start_char=69|end_char=70
+
+8	!	!	PUNCT	U		6	punct	6:punct	start_char=43|end_char=44
+
+14	.	.	PUNCT	U		9	punct	9:punct	start_char=95|end_char=96
+
+11	.	.	PUNCT	U		8	punct	8:punct	start_char=75|end_char=76
+
+12	.	.	PUNCT	U		9	punct	9:punct	start_char=90|end_char=91
+
+19	.	.	PUNCT	U		2	punct	2:punct	start_char=102|end_char=103
+
+36	.	.	PUNCT	U		3	punct	3:punct	start_char=228|end_char=229
+
+34	.	.	PUNCT	U		4	punct	4:punct	start_char=202|end_char=203
+
+6	.	.	PUNCT	U		4	punct	4:punct	start_char=44|end_char=45
+
+11	.	.	PUNCT	U		8	punct	8:punct	start_char=73|end_char=74
+
+23	.	.	PUNCT	U		10	punct	10:punct	start_char=135|end_char=136
+
+40	.	.	PUNCT	U		4	punct	4:punct	start_char=254|end_char=255
+
+28	.	.	PUNCT	U		17	punct	17:punct	start_char=208|end_char=209
+
+13	.	.	PUNCT	U		7	punct	7:punct	start_char=77|end_char=78
+
+22	.	.	PUNCT	U		5	punct	5:punct	start_char=154|end_char=155
+
+6	.	.	PUNCT	U		1	punct	1:punct	start_char=37|end_char=38
+
+7	.	.	PUNCT	U		3	punct	3:punct	start_char=37|end_char=38
+
+44	.	.	PUNCT	U		33	punct	33:punct	start_char=276|end_char=277
+
+18	.	.	PUNCT	U		3	punct	3:punct	start_char=81|end_char=82
+
+17	.	.	PUNCT	U		10	punct	10:punct	start_char=100|end_char=101
+
+7	.	.	PUNCT	U		3	punct	3:punct	start_char=33|end_char=34
+
+12	.	.	PUNCT	U		7	punct	7:punct	start_char=83|end_char=84
+
+18	.	.	PUNCT	U		7	punct	7:punct	start_char=116|end_char=117
+
+14	.	.	PUNCT	U		3	punct	3:punct	start_char=113|end_char=114
+
+11	.	.	PUNCT	U		8	punct	8:punct	start_char=66|end_char=67
+
+18	.	.	PUNCT	U		4	punct	4:punct	start_char=98|end_char=99
+
+10	.	.	PUNCT	U		3	punct	3:punct	start_char=60|end_char=61
+
+16	.	.	PUNCT	U		3	punct	3:punct	start_char=81|end_char=82
+
+19	.	.	PUNCT	U		2	punct	2:punct	start_char=117|end_char=118
+
+14	.	.	PUNCT	U		6	punct	6:punct	start_char=67|end_char=68
+
+12	.	.	PUNCT	U		6	punct	6:punct	start_char=52|end_char=53
+
+24	.	.	PUNCT	U		3	punct	3:punct	start_char=124|end_char=125
+
+11	.	.	PUNCT	U		2	punct	2:punct	start_char=51|end_char=52
+
+15	.	.	PUNCT	U		3	punct	3:punct	start_char=81|end_char=82
+
+11	.	.	PUNCT	U		4	punct	4:punct	start_char=47|end_char=48
+
+7	.	.	PUNCT	U		3	punct	3:punct	start_char=30|end_char=31
+
+16	.	.	PUNCT	U		2	punct	2:punct	start_char=74|end_char=75
+
+27	.	.	PUNCT	U		2	punct	2:punct	start_char=122|end_char=123
+
+4	.	.	PUNCT	U		2	punct	2:punct	start_char=14|end_char=15
+
+6	.	.	PUNCT	U		1	punct	1:punct	start_char=41|end_char=42
+
+32	.	.	PUNCT	U		11	punct	11:punct	start_char=147|end_char=148
+
+25	.	.	PUNCT	U		6	punct	6:punct	start_char=93|end_char=94
+
+17	.	.	PUNCT	U		14	punct	14:punct	start_char=73|end_char=74
+
+18	.	.	PUNCT	U		5	punct	5:punct	start_char=89|end_char=90
+
+4	:	:	PUNCT	U		3	punct	3:punct	start_char=13|end_char=14
+
+19	.	.	PUNCT	U		9	punct	9:punct	start_char=86|end_char=87
+
+23	.	.	PUNCT	U		10	punct	10:punct	start_char=144|end_char=145
+
+14	.	.	PUNCT	U		2	punct	2:punct	start_char=64|end_char=65
+
+22	.	.	PUNCT	U		9	punct	9:punct	start_char=118|end_char=119
+
+21	.	.	PUNCT	U		5	punct	5:punct	start_char=82|end_char=83
+
+4	.	.	PUNCT	U		3	punct	3:punct	start_char=17|end_char=18
+
+27	.	.	PUNCT	U		4	punct	4:punct	start_char=167|end_char=168
+
+10	.	.	PUNCT	U		2	punct	2:punct	start_char=54|end_char=55
+
+13	.	.	PUNCT	U		10	punct	10:punct	start_char=58|end_char=59
+
+13	.	.	PUNCT	U		9	punct	9:punct	start_char=73|end_char=74
+
+68	.	.	PUNCT	U		34	punct	34:punct	start_char=394|end_char=395
+
+13	.	.	PUNCT	U		12	punct	12:punct	start_char=77|end_char=78
+
+19	.	.	PUNCT	U		7	punct	7:punct	start_char=106|end_char=107
+
+20	.	.	PUNCT	U		14	punct	14:punct	start_char=77|end_char=78
+
+4	.	.	PUNCT	U		1	punct	1:punct	start_char=15|end_char=16
+
+8	.	.	PUNCT	U		1	punct	1:punct	start_char=51|end_char=52
+
+5	.	.	PUNCT	U		2	punct	2:punct	start_char=31|end_char=32
+
+10	.	.	PUNCT	U		2	punct	2:punct	start_char=46|end_char=47
+
+12	.	.	PUNCT	U		9	punct	9:punct	start_char=65|end_char=66
+
+14	.	.	PUNCT	U		8	punct	8:punct	start_char=81|end_char=82
+
+11	.	.	PUNCT	U		3	punct	3:punct	start_char=51|end_char=52
+
+7	.	.	PUNCT	U		6	punct	6:punct	start_char=32|end_char=33
+
+17	.	.	PUNCT	U		5	punct	5:punct	start_char=85|end_char=86
+
+22	.	.	PUNCT	U		5	punct	5:punct	start_char=103|end_char=104
+
+11	.	.	PUNCT	U		6	punct	6:punct	start_char=50|end_char=51
+
+12	.	.	PUNCT	U		1	punct	1:punct	start_char=45|end_char=46
+
+15	?	?	PUNCT	U		5	punct	5:punct	start_char=60|end_char=61
+
+18	.	.	PUNCT	U		1	punct	1:punct	start_char=87|end_char=88
+
+24	.	.	PUNCT	U		6	punct	6:punct	start_char=116|end_char=117
+
+22	.	.	PUNCT	U		7	punct	7:punct	start_char=105|end_char=106
+
+21	.	.	PUNCT	U		1	punct	1:punct	start_char=94|end_char=95
+
+15	.	.	PUNCT	U		4	punct	4:punct	start_char=69|end_char=70
+
+15	.	.	PUNCT	U		8	punct	8:punct	start_char=75|end_char=76
+
+33	.	.	PUNCT	U		2	punct	2:punct	start_char=193|end_char=194
+
+15	.	.	PUNCT	U		3	punct	3:punct	start_char=61|end_char=62
+
+37	.	.	PUNCT	U		15	punct	15:punct	start_char=238|end_char=239
+
+7	.	.	PUNCT	U		3	punct	3:punct	start_char=29|end_char=30
+
+10	.	.	PUNCT	U		7	punct	7:punct	start_char=58|end_char=59
+
+9	.	.	PUNCT	U		2	punct	2:punct	start_char=56|end_char=57
+
+27	.	.	PUNCT	U		5	punct	5:punct	start_char=122|end_char=123
+
+8	.	.	PUNCT	U		2	punct	2:punct	start_char=27|end_char=28
+
+7	.	.	PUNCT	U		3	punct	3:punct	start_char=36|end_char=37
+
+10	.	.	PUNCT	U		6	punct	6:punct	start_char=50|end_char=51
+
+16	.	.	PUNCT	U		2	punct	2:punct	start_char=77|end_char=78
+
+39	.	.	PUNCT	U		15	punct	15:punct	start_char=216|end_char=217
+
+7	?	?	PUNCT	U		4	punct	4:punct	start_char=36|end_char=37
+
+35	.	.	PUNCT	U		15	punct	15:punct	start_char=182|end_char=183
+
+45	.	.	PUNCT	U		14	punct	14:punct	start_char=289|end_char=290
+
+42	.	.	PUNCT	U		33	punct	33:punct	start_char=273|end_char=274
+
+6	.	.	PUNCT	U		3	punct	3:punct	start_char=59|end_char=60
+
+46	.	.	PUNCT	U		6	punct	6:punct	start_char=268|end_char=269
+
+7	.	.	PUNCT	U		6	punct	6:punct	start_char=60|end_char=61
+
+43	.	.	PUNCT	U		7	punct	7:punct	start_char=264|end_char=265
+
+25	.	.	PUNCT	U		9	punct	9:punct	start_char=164|end_char=165
+
+10	.	.	PUNCT	U		7	punct	7:punct	start_char=60|end_char=61
+
+5	.	.	PUNCT	U		2	punct	2:punct	start_char=16|end_char=17
+
+18	.	.	PUNCT	U		1	punct	1:punct	start_char=87|end_char=88
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=35|end_char=36
+
+22	.	.	PUNCT	U		1	punct	1:punct	start_char=140|end_char=141
+
+12	.	.	PUNCT	U		7	punct	7:punct	start_char=74|end_char=75
+
+26	.	.	PUNCT	U		2	punct	2:punct	start_char=163|end_char=164
+
+15	.	.	PUNCT	U		4	punct	4:punct	start_char=81|end_char=82
+
+14	.	.	PUNCT	U		2	punct	2:punct	start_char=96|end_char=97
+
+19	.	.	PUNCT	U		14	punct	14:punct	start_char=123|end_char=124
+
+16	.	.	PUNCT	U		11	punct	11:punct	start_char=94|end_char=95
+
+6	.	.	PUNCT	U		2	punct	2:punct	start_char=44|end_char=45
+
+10	.	.	PUNCT	U		4	punct	4:punct	start_char=62|end_char=63
+
+4	.	.	PUNCT	U		2	punct	2:punct	start_char=30|end_char=31
+
+23	.	.	PUNCT	U		2	punct	2:punct	start_char=125|end_char=126
+
+37	.	.	PUNCT	U		12	punct	12:punct	start_char=234|end_char=235
+
+15	.	.	PUNCT	U		5	punct	5:punct	start_char=108|end_char=109
+
+9	.	.	PUNCT	U		5	punct	5:punct	start_char=59|end_char=60
+
+10	.	.	PUNCT	U		6	punct	6:punct	start_char=61|end_char=62
+
+8	.	.	PUNCT	U		7	punct	7:punct	start_char=53|end_char=54
+
+9	.	.	PUNCT	U		3	punct	3:punct	start_char=63|end_char=64
+
+5	.	.	PUNCT	U		2	punct	2:punct	start_char=35|end_char=36
+
+7	.	.	PUNCT	U		2	punct	2:punct	start_char=42|end_char=43
+
+20	.	.	PUNCT	U		4	punct	4:punct	start_char=106|end_char=107
+
+48	.	.	PUNCT	U		44	punct	44:punct	start_char=278|end_char=279
+
+12	.	.	PUNCT	U		8	punct	8:punct	start_char=63|end_char=64
+
+12	.	.	PUNCT	U		7	punct	7:punct	start_char=55|end_char=56
+
+41	.	.	PUNCT	U		6	punct	6:punct	start_char=222|end_char=223
+
+20	.	.	PUNCT	U		10	punct	10:punct	start_char=103|end_char=104
+
+23	.	.	PUNCT	U		4	punct	4:punct	start_char=112|end_char=113
+
+12	.	.	PUNCT	U		4	punct	4:punct	start_char=64|end_char=65
+
+22	.	.	PUNCT	U		11	punct	11:punct	start_char=88|end_char=89
+
+9	.	.	PUNCT	U		6	punct	6:punct	start_char=39|end_char=40
+
+8	.	.	PUNCT	U		2	punct	2:punct	start_char=40|end_char=41
+
+12	.	.	PUNCT	U		4	punct	4:punct	start_char=81|end_char=82
+
+23	.	.	PUNCT	U		3	punct	3:punct	start_char=142|end_char=143
+
+27	.	.	PUNCT	U		3	punct	3:punct	start_char=141|end_char=142
+
+21	.	.	PUNCT	U		19	punct	19:punct	start_char=115|end_char=116
+
+20	.	.	PUNCT	U		2	punct	2:punct	start_char=100|end_char=101
+
+2	.	.	PUNCT	U		1	punct	1:punct	start_char=9|end_char=10
+
+21	.	.	PUNCT	U		6	punct	6:punct	start_char=124|end_char=125
+
+8	.	.	PUNCT	U		7	punct	7:punct	start_char=31|end_char=32
+
+39	?	?	PUNCT	U		38	punct	38:punct	start_char=206|end_char=207
+
+22	Донбасі	Донбас	PROPN	Npmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	19	nmod	19:nmod	start_char=321|end_char=328
+
+20	.	.	PUNCT	U		4	punct	4:punct	start_char=127|end_char=128
+
+19	.	.	PUNCT	U		8	punct	8:punct	start_char=98|end_char=99
+
+36	.	.	PUNCT	U		34	punct	34:punct	start_char=203|end_char=204
+
+15	.	.	PUNCT	U		3	punct	3:punct	start_char=66|end_char=67
+
+17	.	.	PUNCT	U		16	punct	16:punct	start_char=109|end_char=110
+
+18	.	.	PUNCT	U		15	punct	15:punct	start_char=98|end_char=99
+
+3	!	!	PUNCT	U		2	punct	2:punct	start_char=18|end_char=19
+
+6	.	.	PUNCT	U		1	punct	1:punct	start_char=23|end_char=24
+
+13	.	.	PUNCT	U		2	punct	2:punct	start_char=78|end_char=79
+
+40	!	!	PUNCT	U		38	punct	38:punct	start_char=209|end_char=210
+
+24	.	.	PUNCT	U		6	punct	6:punct	start_char=147|end_char=148
+
+33	.	.	PUNCT	U		8	punct	8:punct	start_char=201|end_char=202
+
+6	!	!	PUNCT	U		2	punct	2:punct	start_char=28|end_char=29
+
+38	.	.	PUNCT	U		17	punct	17:punct	start_char=292|end_char=293
+
+26	.	.	PUNCT	U		2	punct	2:punct	start_char=182|end_char=183
+
+19	.	.	PUNCT	U		3	punct	3:punct	start_char=99|end_char=100
+
+36	.	.	PUNCT	U		8	punct	8:punct	start_char=206|end_char=207
+
+25	.	.	PUNCT	U		22	punct	22:punct	start_char=142|end_char=143
+
+22	.	.	PUNCT	U		3	punct	3:punct	start_char=101|end_char=102
+
+27	.	.	PUNCT	U		6	punct	6:punct	start_char=141|end_char=142
+
+46	.	.	PUNCT	U		43	punct	43:punct	start_char=215|end_char=216
+
+49	.	.	PUNCT	U		6	punct	6:punct	start_char=390|end_char=391
+
+21	.	.	PUNCT	U		5	punct	5:punct	start_char=146|end_char=147
+
+19	.	.	PUNCT	U		4	punct	4:punct	start_char=110|end_char=111
+
+6	.	.	PUNCT	U		2	punct	2:punct	start_char=35|end_char=36
+
+19	світі	світ	NOUN	Ncmsln	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	17	nmod	17:nmod	start_char=120|end_char=125
+
+47	.	.	PUNCT	U		16	punct	16:punct	start_char=334|end_char=335
+
+28	.	.	PUNCT	U		2	punct	2:punct	start_char=199|end_char=200
+
+25	.	.	PUNCT	U		2	punct	2:punct	start_char=180|end_char=181
+
+21	.	.	PUNCT	U		1	punct	1:punct	start_char=130|end_char=131
+
+14	.	.	PUNCT	U		8	punct	8:punct	start_char=82|end_char=83
+
+38	.	.	PUNCT	U		19	punct	19:punct	start_char=216|end_char=217
+
+7	.	.	PUNCT	U		4	punct	4:punct	start_char=42|end_char=43
+
+20	.	.	PUNCT	U		3	punct	3:punct	start_char=113|end_char=114
 
