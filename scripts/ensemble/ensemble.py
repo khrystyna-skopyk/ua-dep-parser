@@ -33,9 +33,10 @@ class DependencyParsingClassifier:
         return batches
 
     def merge_predictions(self, predictions):
-        parsed_sentence = Sentence()
+        parsed_sentences = []
         for sentence in predictions:
             for word_list in sentence:
+                parsed_sentence = Sentence()
                 deprels = {} 
                 heads = {}
                 ids = {}
@@ -58,7 +59,8 @@ class DependencyParsingClassifier:
 
                 word = self.merge_word_values(deprels, heads, ids, texts, uposes, lemmas,xposes, feats_list, miscs)
                 parsed_sentence.add(word)
-        return parsed_sentence
+            parsed_sentences.append(parsed_sentence)
+        return parsed_sentences
 
     def merge_word_values(self, deprels, heads, ids, texts, uposes, lemmas, xposes, feats_list, miscs):
         id = self.merge_dict_values(ids)
@@ -111,8 +113,7 @@ class DependencyParsingClassifier:
         for sentence in sentences:
             time.sleep(delay)
             print(sentence)
-            parsed_sentence = self.predict(sentence)
-            parsed_sentences.append(parsed_sentence)
+            parsed_sentences += self.predict(sentence)
         self.sentences = parsed_sentences
         return parsed_sentences
 
@@ -122,8 +123,8 @@ class DependencyParsingClassifier:
             prediction = connector.predict(sentence)
             predictions.append(prediction)
         predictions = self.revert_predictions(predictions)
-        parsed_sentence = self.merge_predictions(predictions)
-        return parsed_sentence
+        parsed_sentences = self.merge_predictions(predictions)
+        return parsed_sentences
 
     def write_to_conllu(self, path):
         sentences_to_write = [] 
@@ -150,13 +151,13 @@ class DependencyParsingClassifier:
 
 
 if __name__ == "__main__":
-    #connector1 = StanzaConnector()
-    connector2 = DiaConnector()
+    connector1 = StanzaConnector()
+    #connector2 = DiaConnector()
 
     with open('uk_iu-ud-test.txt') as f:
         full_text = f.read()
 
-    classifier = DependencyParsingClassifier([connector2])
+    classifier = DependencyParsingClassifier([connector1])
     predictions = classifier.predict_full_text(full_text)
     print(predictions)
     classifier.write_to_conllu("ensemble.conllu")
