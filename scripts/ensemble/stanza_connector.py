@@ -18,7 +18,7 @@ class StanzaConnector(Connector):
         if "model" not in kwargs:
             kwargs["model"] = stanza.Pipeline(lang=kwargs['lang'], processors=kwargs["processors"])
 
-    def __init__(self, **kwargs) -> None:
+    def __init__(self, **kwargs):
         if "model" not in kwargs:
             self.__init_model(kwargs)
         if "uas_weight" not in kwargs:
