@@ -65,6 +65,7 @@ class DiaConnector(Connector):
             counter += 1
             word.id = counter
             word.text = split[1]
+            word.lemma = split[1]
             result.append(word)
         return result
 
@@ -81,7 +82,10 @@ class DiaConnector(Connector):
                         continue
                     if words[word_index].text != item:
                         continue
-                    words[word_index].upos = None
+                    words[word_index].upos = '_'
+                    words[word_index].xpos = '_'
+                    words[word_index].feats = '_'
+                    words[word_index].misc = '_'
                     words[word_index].deprel = sentence.rels[index]
                     words[word_index].head = sentence.arcs[index]
                     words[word_index].uas_weight = self.uas_weight
