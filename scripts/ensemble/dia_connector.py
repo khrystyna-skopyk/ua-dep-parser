@@ -7,7 +7,7 @@ class DiaConnector(Connector):
 
     def __init_model(self, kwargs):
         if "corpus_name" not in kwargs:
-            kwargs["corpus_name"] = "uk_iu.TurkuNLP"
+            kwargs["corpus_name"] = "uk_iu.turkunlp"
         if "lang" not in kwargs:
             kwargs["lang"] = "uk"
         self.language = kwargs["lang"]
