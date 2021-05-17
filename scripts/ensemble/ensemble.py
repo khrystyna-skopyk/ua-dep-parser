@@ -35,8 +35,8 @@ class DependencyParsingClassifier:
     def merge_predictions(self, predictions):
         parsed_sentences = []
         for sentence in predictions:
+            parsed_sentence = Sentence()
             for word_list in sentence:
-                parsed_sentence = Sentence()
                 deprels = {} 
                 heads = {}
                 ids = {}
@@ -153,7 +153,6 @@ class DependencyParsingClassifier:
 if __name__ == "__main__":
     connector1 = StanzaConnector()
     #connector2 = DiaConnector()
-
     with open('uk_iu-ud-test.txt') as f:
         full_text = f.read()
 
