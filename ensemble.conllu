@@ -1,0 +1,11 @@
+1	Зречення		_	_	_	6	nsubj	6:nsubj	_
+2	культурної		_	_	_	3	amod	3:amod	_
+3	ідентичності		_	_	_	1	nmod	1:nmod	_
+4	–		_	_	_	6	punct	6:punct	_
+5	це		_	_	_	6	expl	6:expl	_
+6	втрата		_	_	_	0	root	0:root	_
+7	свободи		_	_	_	6	nmod	6:nmod	_
+8	й		_	_	_	9	cc	9:cc	_
+9	самовладності		_	_	_	7	conj	7:conj	_
+10	.		_	_	_	6	punct	6:punct	_
+

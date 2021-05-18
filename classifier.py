@@ -1,6 +1,7 @@
 import operator
 from typing import Sequence
 import stanza
+from stanza.models.common.pretrain import Pretrain
 import time
 
 from models import Word, Sentence
@@ -151,12 +152,64 @@ class DependencyParsingClassifier:
 
 
 if __name__ == "__main__":
-    connector1 = StanzaConnector()
-    connector2 = DiaConnector()
-    #with open('uk_iu-ud-test.txt') as f:
-    #    full_text = f.read()
+    
+    with open('uk_iu-ud-test.txt') as f:
+        full_text = f.read()
+
     full_text = "Зречення культурної ідентичності – це втрата свободи й самовладності."
-    classifier = DependencyParsingClassifier([connector2])
+    
+    pt_original = Pretrain("ewt_original.pt", "./models/original/ukoriginalvectors.xz")
+    pt_fast_text = Pretrain("ewt_fast_text.pt", "./models/fast-text/uk.vectors.xz")
+    pt_glove = Pretrain("ewt_glove.pt", "./models/glove/glove.xz")
+ 
+    pt_original.load()
+    pt_fast_text.load()
+    pt_glove.load()
+
+    config_original = {
+        'processors': 'pos, lemma, tokenize, depparse',
+        'lang': 'uk',
+        'depparse_model_path': './models/original/depparse/uk_iu_parser.pt',
+        'pos_pretrain_path': 'ewt_original.pt',
+        'depparse_pretrain_path': 'ewt_original.pt',
+        'tokenize_model_path': './models/original/tokenize/uk_iu_tokenizer.pt',
+        'pos_model_path': './models/original/pos/uk_iu_tagger.pt',
+        'lemma_model_path': './models/original/lemma/uk_iu_lemmatizer.pt',
+        'mwt_model_path': './models/original/mwt/uk_iu_mwt_expander.pt'
+    }
+
+    config_fast_text = {
+        'processors': 'pos, lemma, tokenize, depparse',
+        'lang': 'uk',
+        'depparse_model_path': './models/fast-text/depparse/uk_iu_parser.pt',
+        'pos_pretrain_path': 'ewt_fast_text.pt',
+        'depparse_pretrain_path': 'ewt_fast_text.pt',
+        'tokenize_model_path': './models/fast-text/tokenize/uk_iu_tokenizer.pt',
+        'pos_model_path': './models/fast-text/pos/uk_iu_tagger.pt',
+        'lemma_model_path': './models/fast-text/lemma/uk_iu_lemmatizer.pt',
+        'mwt_model_path': './models/fast-text/mwt/uk_iu_mwt_expander.pt'
+    }
+
+    config_glove = {
+        'processors': 'pos, lemma, tokenize, depparse',
+        'lang': 'uk',
+        'depparse_model_path': './models/glove/depparse/uk_iu_parser.pt',
+        'pos_pretrain_path': 'ewt_glove.pt',
+        'depparse_pretrain_path': 'ewt_glove.pt',
+        'tokenize_model_path': './models/glove/tokenize/uk_iu_tokenizer.pt',
+        'pos_model_path': './models/glove/pos/uk_iu_tagger.pt',
+        'lemma_model_path': './models/glove/lemma/uk_iu_lemmatizer.pt',
+        'mwt_model_path': './models/glove/mwt/uk_iu_mwt_expander.pt'
+    }
+
+    model_original = stanza.Pipeline(**config_original)
+    model_fast_text = stanza.Pipeline(**config_fast_text)
+    model_glove = stanza.Pipeline(**config_glove)
+
+    connector_original = StanzaConnector(model=model_original)
+    connector_fast_text = StanzaConnector(model=model_fast_text)
+    connector_glove = StanzaConnector(model=model_glove)
+
+    classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove])
     predictions = classifier.predict_full_text(full_text)
-    print(predictions)
     classifier.write_to_conllu("ensemble.conllu")
