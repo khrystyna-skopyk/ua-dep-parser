@@ -156,7 +156,7 @@ if __name__ == "__main__":
     with open('uk_iu-ud-test.txt') as f:
         full_text = f.read()
 
-    full_text = "Зречення культурної ідентичності – це втрата свободи й самовладності."
+    #full_text = "Зречення культурної ідентичності – це втрата свободи й самовладності."
     
     pt_original = Pretrain("ewt_original.pt", "./models/original/ukoriginalvectors.xz")
     pt_fast_text = Pretrain("ewt_fast_text.pt", "./models/fast-text/uk.vectors.xz")
