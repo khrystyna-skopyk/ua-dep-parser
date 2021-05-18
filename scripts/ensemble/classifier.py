@@ -152,11 +152,11 @@ class DependencyParsingClassifier:
 
 if __name__ == "__main__":
     connector1 = StanzaConnector()
-    #connector2 = DiaConnector()
-    with open('uk_iu-ud-test.txt') as f:
-        full_text = f.read()
-
-    classifier = DependencyParsingClassifier([connector1])
+    connector2 = DiaConnector()
+    #with open('uk_iu-ud-test.txt') as f:
+    #    full_text = f.read()
+    full_text = "Зречення культурної ідентичності – це втрата свободи й самовладності."
+    classifier = DependencyParsingClassifier([connector2])
     predictions = classifier.predict_full_text(full_text)
     print(predictions)
     classifier.write_to_conllu("ensemble.conllu")
