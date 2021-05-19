@@ -9358,13 +9358,6 @@
 1	Тільки	тільки	PART	Q	_	0	root	0:root	Id=1mqk|LTranslit=tiľky|SpaceAfter=No|Translit=Tiľky
 2	.	.	PUNCT	U	_	1	punct	1:punct	Id=1mql|LTranslit=.|Translit=.
 
-# sent_id = 1mqm
-# text = Більше нічим.
-# translit = Biľše ničym.
-1	Більше	більше	ADV	Rc	Degree=Cmp	2	advmod	2:advmod	Id=1mqn|LTranslit=biľše|Translit=Biľše
-2	нічим	ніщо	PRON	Pz---n-in	Animacy=Inan|Case=Ins|PronType=Neg	0	root	0:root	Id=1mqo|LTranslit=niščo|Promoted=Yes|SpaceAfter=No|Translit=ničym
-3	.	.	PUNCT	U	_	2	punct	2:punct	Id=1mqp|LTranslit=.|Translit=.
-
 # sent_id = 1mqq
 # text = І от одній дівці вдається вирватися зі скляної клітки, наробити нагорі сандвічів і принести "колегам" у печеру.
 # translit = I ot odnij divci vdaěťśа vyrvatyśа zi skľаnoji klitky, narobyty nahori sandvičiv i prynesty "koleham" u pečeru.
@@ -16111,40 +16104,6 @@
 9	Титаренка	титаренко	NOUN	Ncmsgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	7	conj	6:nmod|7:conj	Id=2x8q|LTranslit=tytarenko|SpaceAfter=No|Translit=Tytarenka
 10	.	.	PUNCT	U	_	1	punct	1:punct	Id=2x8r|LTranslit=.|Translit=.
 
-# sent_id = 2x8s
-# text = Ніде правди діти, й сам Микола Степанович за ці тижні не знайшов часу піти до Титаренкової квартири — бодай спитати, чи хтось носить йому передачі…
-# translit = Nide pravdy dity, j sam Mykola Stepanovyč za ci tyžni ne znajšov času pity do Tytarenkovoji kvartyry — bodaj spytaty, čy chtoś nosyť jomu peredači…
-1-2	Ніде	_	_	_	_	_	_	_	_
-1	Немає	немати	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	14	parataxis:discourse	14:parataxis:discourse	Id=38w9|LTranslit=nematy|Translit=Nemaě
-2	де	де	ADV	Pr------r	PronType=Rel	4	advmod	4:advmod	Id=38wa|LTranslit=de|Translit=de
-3	правди	правда	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	obj	4:obj	Id=2x8u|LTranslit=pravda|Translit=pravdy
-4	діти	діти	VERB	Vmen	Aspect=Perf|VerbForm=Inf	1	xcomp	1:xcomp	Id=2x8v|LTranslit=dity|SpaceAfter=No|Translit=dity
-5	,	,	PUNCT	U	_	1	punct	1:punct	Id=2x8w|LTranslit=,|Translit=,
-6	й	й	PART	Q	_	8	discourse	8:discourse	Id=2x8x|LTranslit=j|Translit=j
-7	сам	сам	DET	Px--m-sna	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs|Reflex=Yes	8	det	8:det	Id=2x8y|LTranslit=sam|Translit=sam
-8	Микола	Микола	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	14	nsubj	14:nsubj	Id=2x8z|LTranslit=Mykola|Translit=Mykola
-9	Степанович	Степанович	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Pat|Number=Sing	8	flat:name	8:flat:name	Id=2x90|LTranslit=Stepanovyč|Translit=Stepanovyč
-10	за	за	ADP	Spsa	Case=Acc	12	case	12:case	Id=2x91|LTranslit=za|Translit=za
-11	ці	цей	DET	Pd---npaa	Animacy=Inan|Case=Acc|Number=Plur|PronType=Dem	12	det	12:det	Id=2x92|LTranslit=cej|Translit=ci
-12	тижні	тиждень	NOUN	Ncmpan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	14	obl	14:obl	Id=2x93|LTranslit=tyždeń|Translit=tyžni
-13	не	не	PART	Q	Polarity=Neg	14	advmod	14:advmod	Id=2x94|LTranslit=ne|Translit=ne
-14	знайшов	знайти	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	0:root	Id=2x95|LTranslit=znajty|Translit=znajšov
-15	часу	час	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	14	obj	14:obj	Id=2x96|LTranslit=čas|Translit=času
-16	піти	піти	VERB	Vmen	Aspect=Perf|VerbForm=Inf	15	acl	15:acl	Id=2x97|LTranslit=pity|Translit=pity
-17	до	до	ADP	Spsg	Case=Gen	19	case	19:case	Id=2x98|LTranslit=do|Translit=do
-18	Титаренкової	Титаренковий	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	19	amod	19:amod	Id=2x99|LTranslit=Tytarenkovyj|Translit=Tytarenkovoji
-19	квартири	квартира	NOUN	Ncfsgn	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	16	obl	16:obl	Id=2x9a|LTranslit=kvartyra|Translit=kvartyry
-20	—	—	PUNCT	U	PunctType=Dash	22	punct	22:punct	Id=2x9b|LTranslit=—|Translit=—
-21	бодай	бодай	PART	Q	_	22	discourse	22:discourse	Id=2x9c|LTranslit=bodaj|Translit=bodaj
-22	спитати	спитати	VERB	Vmen	Aspect=Perf|VerbForm=Inf	16	advcl:svc	16:advcl:svc	Id=2x9d|LTranslit=spytaty|SpaceAfter=No|Translit=spytaty
-23	,	,	PUNCT	U	_	26	punct	26:punct	Id=2x9e|LTranslit=,|Translit=,
-24	чи	чи	PART	Q	_	26	discourse	26:discourse	Id=2x9f|LTranslit=čy|Translit=čy
-25	хтось	хтось	PRON	Pi---y-nn	Animacy=Anim|Case=Nom|PronType=Ind	26	nsubj	26:nsubj	Id=2x9g|LTranslit=chtoś|Translit=chtoś
-26	носить	носити	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	ccomp	22:ccomp	Id=2x9h|LTranslit=nosyty|Translit=nosyť
-27	йому	він	PRON	Pp-3m-sdn	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	iobj	26:iobj	Id=2x9i|LTranslit=vin|Translit=jomu
-28	передачі	передача	NOUN	Ncfpan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	26	obj	26:obj	Id=2x9j|LTranslit=peredača|SpaceAfter=No|Translit=peredači
-29	…	…	PUNCT	U	_	14	punct	14:punct	Id=2x9k|LTranslit=…|Translit=…
-
 # annotation_gap
 # sent_id = 2xb1
 # text = Ось тут критика розбирає, чи можлива і дійсна така людина; а переконавшися, що вона вірна дійсності, критик переходить до своїх власних міркувань про причини, що породили таку людину і т. д.
@@ -21148,50 +21107,6 @@
 12	до	до	ADP	Spsg	Case=Gen	13	case	13:case	Id=37p5|LTranslit=do|Translit=do
 13	Києва	Київ	PROPN	Npmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	8	obl	8:obl	Id=37p6|LTranslit=Kyjiv|SpaceAfter=No|Translit=Kyěva
 14	.	.	PUNCT	U	_	8	punct	8:punct	Id=37p7|LTranslit=.|Translit=.
-
-# sent_id = 37p8
-# text = Столиця буде готовою до такого навантаження, доповів на засіданні Оргкомітету очільник міста Віталій Кличко: «Ми зуміли успішно підготуватися до пісенного конкурсу «Євробачення» за півроку, тепер же у нас є цілий рік.
-# translit = Stolyćа bude hotovoju do takoho navantaženńа, dopoviv na zasidanni Orhkomitetu očiľnyk mista Vitalij Klyčko: «My zumily uspišno pidhotuvatyśа do pisennoho konkursu «Ěvrobačenńа» za pivroku, teper že u nas ě cilyj rik.
-1	Столиця	столиця	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	nsubj	3:nsubj	Id=37p9|LTranslit=stolyćа|Translit=Stolyćа
-2	буде	бути	AUX	Vapif3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	cop	3:cop	Id=37pa|LTranslit=buty|Translit=bude
-3	готовою	готовий	ADJ	Ao-fsif	Case=Ins|Gender=Fem|Number=Sing	0	root	0:root	Id=37pb|LTranslit=hotovyj|Translit=hotovoju
-4	до	до	ADP	Spsg	Case=Gen	6	case	6:case	Id=37pc|LTranslit=do|Translit=do
-5	такого	такий	DET	Pd--n-sga	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	6	det	6:det	Id=37pd|LTranslit=takyj|Translit=takoho
-6	навантаження	навантаження	NOUN	Ncnsgn	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	3	obl	3:obl	Id=37pe|LTranslit=navantaženńа|SpaceAfter=No|Translit=navantaženńа
-7	,	,	PUNCT	U	_	8	punct	8:punct	Id=37pf|LTranslit=,|Translit=,
-8	доповів	доповісти	VERB	Vmeis-sm	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	3	parataxis	3:parataxis	Id=37pg|LTranslit=dopovisty|Translit=dopoviv
-9	на	на	ADP	Spsl	Case=Loc	10	case	10:case	Id=37ph|LTranslit=na|Translit=na
-10	засіданні	засідання	NOUN	Ncnsln	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	8	obl	8:obl	Id=37pi|LTranslit=zasidanńа|Translit=zasidanni
-11	Оргкомітету	оргкомітет	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	nmod	10:nmod	Id=37pj|LTranslit=orhkomitet|Translit=Orhkomitetu
-12	очільник	очільник	NOUN	Ncmsny	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	nsubj	8:nsubj	Id=37pk|LTranslit=očiľnyk|Translit=očiľnyk
-13	міста	місто	NOUN	Ncnsgn	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	12	nmod	12:nmod	Id=37pl|LTranslit=misto|Translit=mista
-14	Віталій	Віталій	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Number=Sing	12	flat:title	12:flat:title	Id=37pm|LTranslit=Vitalij|Translit=Vitalij
-15	Кличко	Кличко	PROPN	Npmsny	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Number=Sing	14	flat:name	14:flat:name	Id=37pn|LTranslit=Klyčko|SpaceAfter=No|Translit=Klyčko
-16	:	:	PUNCT	U	_	19	punct	19:punct	Id=37po|LTranslit=:|Translit=:
-17	«	«	PUNCT	U	PunctType=Quot	19	punct	19:punct	Id=37pp|LTranslit=«|SpaceAfter=No|Translit=«
-18	Ми	ми	PRON	Pp-1-ypnn	Animacy=Anim|Case=Nom|Number=Plur|Person=1|PronType=Prs	19	nsubj	19:nsubj|21:nsubj:x	Id=37pq|LTranslit=my|Translit=My
-19	зуміли	зуміти	VERB	Vmeis-p	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	8	parataxis	8:parataxis	Id=37pr|LTranslit=zumity|Translit=zumily
-20	успішно	успішно	ADV	Rp	Degree=Pos	21	advmod	21:advmod	Id=37ps|LTranslit=uspišno|Translit=uspišno
-21	підготуватися	підготуватися	VERB	Vmen	Aspect=Perf|VerbForm=Inf	19	xcomp	19:xcomp	Id=37pt|LTranslit=pidhotuvatyśа|Translit=pidhotuvatyśа
-22	до	до	ADP	Spsg	Case=Gen	24	case	24:case	Id=37pu|LTranslit=do|Translit=do
-23	пісенного	пісенний	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	24	amod	24:amod	Id=37pv|LTranslit=pisennyj|Translit=pisennoho
-24	конкурсу	конкурс	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	21	obl	21:obl	Id=37pw|LTranslit=konkurs|Translit=konkursu
-25	«	«	PUNCT	U	PunctType=Quot	26	punct	26:punct	Id=37px|LTranslit=«|SpaceAfter=No|Translit=«
-26	Євробачення	євробачення	NOUN	Ncnsnn	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	24	flat:title	24:flat:title	Id=37py|LTranslit=ěvrobačenńа|SpaceAfter=No|Translit=Ěvrobačenńа
-27	»	»	PUNCT	U	PunctType=Quot	26	punct	26:punct	Id=37pz|LTranslit=»|Translit=»
-28	за	за	ADP	Spsa	Case=Acc	30	case	30:case	Id=37q0|LTranslit=za|Translit=za
-29-30	півроку	_	_	_	_	_	_	_	SpaceAfter=No
-29	пів	пів	NUM	Mlc-a	Case=Acc|NumType=Card|Orth=Alt|Uninflect=Yes	30	nummod:gov	30:nummod:gov	Id=38wv|LTranslit=piv|Translit=piv
-30	року	рік	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	21	obl	21:obl	Id=38ww|LTranslit=rik|Translit=roku
-31	,	,	PUNCT	U	_	36	punct	36:punct	Id=37q2|LTranslit=,|Translit=,
-32	тепер	тепер	ADV	Pd------r	PronType=Dem	36	advmod	36:advmod	Id=37q3|LTranslit=teper|Translit=teper
-33	же	же	PART	Q	_	32	discourse	32:discourse	Id=37q4|LTranslit=že|Translit=že
-34	у	у	ADP	Spsg	Case=Gen	35	case	35:case	Id=37q5|LTranslit=u|Translit=u
-35	нас	ми	PRON	Pp-1-ypgn	Animacy=Anim|Case=Gen|Number=Plur|Person=1|PronType=Prs	36	obl	36:obl	Id=37q6|LTranslit=my|Translit=nas
-36	є	бути	VERB	Vapip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	parataxis	19:parataxis	Id=37q7|LTranslit=buty|Translit=ě
-37	цілий	цілий	ADJ	Ao-msnf	Case=Nom|Gender=Masc|Number=Sing	38	amod	38:amod	Id=37q8|LTranslit=cilyj|Translit=cilyj
-38	рік	рік	NOUN	Ncmsnn	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	36	nsubj	36:nsubj	Id=37q9|LTranslit=rik|SpaceAfter=No|Translit=rik
-39	.	.	PUNCT	U	_	19	punct	19:punct	Id=37qa|LTranslit=.|Translit=.
 
 # sent_id = 37qb
 # text = Аеропорти та готелі готові приймати гостей.
