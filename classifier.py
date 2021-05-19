@@ -9,6 +9,7 @@ from models import Word, Sentence
 from helpers import Graph
 from stanza_connector import StanzaConnector
 from dia_connector import DiaConnector
+from trankit_connector import TrankitConnector
 from collections import OrderedDict
 from conllu.models import TokenList, Token
 from conllu import parse_tree
@@ -228,6 +229,7 @@ if __name__ == "__main__":
     connector_original = StanzaConnector(model=model_original)
     connector_fast_text = StanzaConnector(model=model_fast_text)
     connector_glove = StanzaConnector(model=model_glove)
+    # connector_trankit = TrankitConnector()
 
     classifier = DependencyParsingClassifier([connector_glove])
     predictions = classifier.predict_full_text(full_text)

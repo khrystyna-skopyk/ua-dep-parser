@@ -1,4 +1,4 @@
-from scripts.data_augmentation.conll import CoNLL
+from scripts.data_augmentation.conllu import CoNLL
 from scripts.data_augmentation.ud_augment import DataAugmentation
 from datetime import datetime
 import os

@@ -3,6 +3,7 @@ import stanza
 from models import Word, Sentence
 from connector import Connector
 
+
 class StanzaConnector(Connector):
 
     def __init_model(self, kwargs):
@@ -31,26 +32,12 @@ class StanzaConnector(Connector):
         document = self.model(text)
         result = []
         for index_sentence, sentence in enumerate(document.sentences):
-            
-            skipped = 0
-            counter = 0
             parsed_sentence = Sentence()
             for item in sentence.words:
-                parent_id_count = len(item.parent.id)
-                text = item.text
-                lemma = item.lemma
-                if parent_id_count > 1 and skipped + 1 != parent_id_count:
-                    skipped += 1
-                    continue
-                elif parent_id_count > 1 and skipped + 1 == parent_id_count:
-                    text = item.parent.text
-                    lemma = item.parent.text
-                    skipped = 0
-                counter += 1
                 word = Word()
-                word.id = counter
-                word.text = text
-                word.lemma = lemma
+                word.id = item.id
+                word.text = item.text
+                word.lemma = item.lemma
                 word.upos = item.upos
                 word.xpos = item.xpos
                 word.feats = item.feats
