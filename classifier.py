@@ -4,7 +4,9 @@ import stanza
 from stanza.models.common.pretrain import Pretrain
 import time
 
+
 from models import Word, Sentence
+from helpers import Graph
 from stanza_connector import StanzaConnector
 from dia_connector import DiaConnector
 from collections import OrderedDict
@@ -125,7 +127,24 @@ class DependencyParsingClassifier:
             predictions.append(prediction)
         predictions = self.revert_predictions(predictions)
         parsed_sentences = self.merge_predictions(predictions)
+        for sentence in parsed_sentences:
+            self.check_for_circle(sentence)
         return parsed_sentences
+
+    def check_for_circle(self, sentence):
+        relations = {}
+        for word in sentence.words:
+            if word.head not in relations:
+                relations[word.head] = []
+            relations[word.head].append(word.id)
+
+        graph = Graph(len(sentence.words)+1)
+        for relation in relations:
+            connections = relations[relation]
+            for connection in connections:
+                graph.add_edge(relation, connection)
+        print(graph.check_is_cyclic())
+
 
     def write_to_conllu(self, path):
         sentences_to_write = [] 
@@ -156,7 +175,7 @@ if __name__ == "__main__":
     with open('uk_iu-ud-test.txt') as f:
         full_text = f.read()
 
-    #full_text = "Зречення культурної ідентичності – це втрата свободи й самовладності."
+    full_text = "Супроти тамошнього населення - культурна, ввічлива, бадьора, весела, - як пристало на синів культурного і лицарського 45-ти мільйонового українського народу та воїнів вкритої славою революційної УПА."
     
     pt_original = Pretrain("ewt_original.pt", "./models/original/ukoriginalvectors.xz")
     pt_fast_text = Pretrain("ewt_fast_text.pt", "./models/fast-text/uk.vectors.xz")
@@ -210,6 +229,6 @@ if __name__ == "__main__":
     connector_fast_text = StanzaConnector(model=model_fast_text)
     connector_glove = StanzaConnector(model=model_glove)
 
-    classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove])
+    classifier = DependencyParsingClassifier([connector_glove])
     predictions = classifier.predict_full_text(full_text)
     classifier.write_to_conllu("ensemble.conllu")
