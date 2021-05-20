@@ -1,16 +1,14 @@
 import operator
-from typing import Sequence
 import stanza
 from stanza.models.common.pretrain import Pretrain
-import time
 
 from configs import config_fast_text, config_glove, config_original
 from models import Word, Sentence
 from helpers import Graph
-from connectors import StanzaConnector, DiaConnector
+from connectors import StanzaConnector
 #from trankit_connector import TrankitConnector
 from collections import OrderedDict
-from conllu.models import TokenList, Token
+from conllu.models import TokenList
 from conllu import parse_tree
 
 class DependencyParsingClassifier:
