@@ -7,8 +7,7 @@ import time
 from configs import config_fast_text, config_glove, config_original
 from models import Word, Sentence
 from helpers import Graph
-from stanza_connector import StanzaConnector
-from dia_connector import DiaConnector
+from connectors import StanzaConnector, DiaConnector
 #from trankit_connector import TrankitConnector
 from collections import OrderedDict
 from conllu.models import TokenList, Token
