@@ -222,7 +222,7 @@ if __name__ == "__main__":
     with open('./data/UD_Ukrainian-IU/uk_iu-ud-test.txt') as f:
         full_text = f.read()
 
-    full_text = "Супроти тамошнього населення - культурна, ввічлива, бадьора, весела, - як пристало на синів культурного і лицарського 45-ти мільйонового українського народу та воїнів вкритої славою революційної УПА."
+    #full_text = "Супроти тамошнього населення - культурна, ввічлива, бадьора, весела, - як пристало на синів культурного і лицарського 45-ти мільйонового українського народу та воїнів вкритої славою революційної УПА."
     
     pt_original = Pretrain("ewt_original.pt", "./models/original/ukoriginalvectors.xz")
     pt_fast_text = Pretrain("ewt_fast_text.pt", "./models/fast-text/uk.vectors.xz")
