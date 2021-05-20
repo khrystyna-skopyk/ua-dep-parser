@@ -192,7 +192,7 @@ class DependencyParsingClassifier:
         for relation in relations:
             connections = relations[relation]
             for connection in connections:
-                graph.add_edge(relation, connection)
+                graph.append_edge(relation, connection)
         return graph.check_is_cyclic()
 
 
@@ -222,7 +222,7 @@ class DependencyParsingClassifier:
 
 if __name__ == "__main__":
     
-    with open('uk_iu-ud-test.txt') as f:
+    with open('./data/UD_Ukrainian-IU/uk_iu-ud-test.txt') as f:
         full_text = f.read()
 
     full_text = "Супроти тамошнього населення - культурна, ввічлива, бадьора, весела, - як пристало на синів культурного і лицарського 45-ти мільйонового українського народу та воїнів вкритої славою революційної УПА."
@@ -282,4 +282,4 @@ if __name__ == "__main__":
 
     classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove])
     predictions = classifier.predict_full_text(full_text)
-    classifier.write_to_conllu("ensemble.conllu")
+    classifier.write_to_conllu("data/conllu-generated/ensemble.conllu")
