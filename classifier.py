@@ -32,7 +32,7 @@ class DependencyParsingClassifier:
                 for index, word in enumerate(prediction.words):
                     if len(batches) <= index_prediction:
                         continue
-                    if batches[index_prediction] <= index:
+                    if len(batches[index_prediction]) <= index:
                         continue
                     batches[index_prediction][index].append(word)
         return batches
