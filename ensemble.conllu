@@ -1,32 +1,32 @@
-1	Супроти	супрота	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	0:root	start_char=0|end_char=7
-2	тамошнього	тамошній	ADJ	Ao-nsgf	Case=Gen|Gender=Neut|Number=Sing	1	amod	1:amod	start_char=8|end_char=18
-3	населення	населення	VERB	Vmpis-sn	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	compound	5:compound	start_char=19|end_char=28
+1	Супроти	супроти	ADP	Spsg	Case=Gen	3	case	3:case	start_char=0|end_char=7
+2	тамошнього	тамошній	ADJ	Ao-nsgf	Case=Gen|Gender=Neut|Number=Sing	3	amod	3:amod	start_char=8|end_char=18
+3	населення	населення	NOUN	Ncnsgn	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	15	obl	15:obl	start_char=19|end_char=28
 4	-	-	PUNCT	U	PunctType=Hyph	5	punct	5:punct	start_char=29|end_char=30
-5	культурна	культурний	ADJ	Afpfsnf	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	1	amod	1:amod	start_char=31|end_char=40
-6	,	,	PUNCT	U		7	punct	7:punct	start_char=40|end_char=41
-7	ввічлива	ввічливий	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	1	amod	1:amod	start_char=42|end_char=50
-8	,	,	PUNCT	U		9	punct	9:punct	start_char=50|end_char=51
-9	бадьора	бадьора	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	1:conj	start_char=52|end_char=59
-10	,	,	PUNCT	U		11	punct	11:punct	start_char=59|end_char=60
-11	весела	весело	NOUN	Ncfsnn	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	conj	1:conj	start_char=61|end_char=67
-12	,	,	PUNCT	U		15	punct	15:punct	start_char=67|end_char=68
-13	-	-	PUNCT	U	PunctType=Hyph	14	punct	14:punct	start_char=69|end_char=70
-14	як	як	NOUN	Ncfsny	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	15	discourse	15:discourse	start_char=71|end_char=73
-15	пристало	пристати	VERB	Vmeis-sn	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	1	parataxis	1:parataxis	start_char=74|end_char=82
-16	на	на	VERB	Vmeis-p	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	15	discourse	15:discourse	start_char=83|end_char=85
-17	синів	син	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	15	flat:repeat	15:flat:repeat	start_char=86|end_char=91
-18	культурного	культурний	VERB	Vmpip3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	punct	15:punct	start_char=92|end_char=103
-19	і	і.	NOUN	Ncnsan	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	1	cc	1:cc	start_char=104|end_char=105
-20	лицарського	лицарський	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	17	list	17:list	start_char=106|end_char=117
-21	45-ти	45-ти	DET	Pd--m-sga	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	15	flat:repeat	15:flat:repeat	start_char=118|end_char=123
-22	мільйонового	мільйоновий	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	15	advcl:svc	15:advcl:svc	start_char=124|end_char=136
-23	українського	український	ADJ	Ao-nsgf	Case=Gen|Gender=Masc|Number=Sing	15	punct	15:punct	start_char=137|end_char=149
-24	народу	народ	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	17	aux	17:aux	start_char=150|end_char=156
-25	та	та	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	17	det:nummod	17:det:nummod	start_char=157|end_char=159
-26	воїнів	воїн	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	1	fixed	1:fixed	start_char=160|end_char=166
-27	вкритої	вкритий	ADJ	Ap-fsgf-ep	Aspect=Perf|Case=Gen|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	17	<PAD>	17:<PAD>	start_char=167|end_char=174
-28	славою	слава	NOUN	Ncfsan	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	17	<PAD>	17:<PAD>	start_char=175|end_char=181
-29	революційної	революційний	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	17	list	17:list	start_char=182|end_char=194
-30	УПА	УПА	NOUN	Y	Abbr=Yes|Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing|Uninflect=Yes	17	list	17:list	start_char=195|end_char=198
-31	.	.	PUNCT	U		15	punct	15:punct	start_char=198|end_char=199
+5	культурна	культурний	ADJ	Afpfsns	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	3	amod	3:amod	start_char=31|end_char=40
+6	,	,	PUNCT	U	_	7	punct	7:punct	start_char=40|end_char=41
+7	ввічлива	ввічливий	ADJ	Ao-fsns	Case=Nom|Gender=Fem|Number=Sing	5	conj	5:conj	start_char=42|end_char=50
+8	,	,	PUNCT	U	_	9	punct	9:punct	start_char=50|end_char=51
+9	бадьора	бадьорий	ADJ	Afpfsns	Case=Nom|Gender=Fem|Number=Sing	3	conj	3:conj	start_char=52|end_char=59
+10	,	,	PUNCT	U	_	11	punct	11:punct	start_char=59|end_char=60
+11	весела	веселий	ADJ	Afpfsns	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	5	conj	5:conj	start_char=61|end_char=67
+12	,	,	PUNCT	U	_	15	punct	15:punct	start_char=67|end_char=68
+13	-	-	PUNCT	U	PunctType=Dash	15	punct	15:punct	start_char=69|end_char=70
+14	як	як	ADV	Pr------r	PronType=Rel	15	advmod	15:advmod	start_char=71|end_char=73
+15	пристало	пристати	VERB	Vmeis-sn	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	0:root	start_char=74|end_char=82
+16	на	на	ADP	Spsa	Case=Acc	17	case	17:case	start_char=83|end_char=85
+17	синів	син	NOUN	Ncmpgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	15	obl	15:obl	start_char=86|end_char=91
+18	культурного	культурний	ADJ	Afpmsgf	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	24	amod	24:amod	start_char=92|end_char=103
+19	і	і	CCONJ	Ccs	_	20	cc	20:cc	start_char=104|end_char=105
+20	лицарського	лицарський	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	18	conj	18:conj	start_char=106|end_char=117
+21	45-ти	45сть	NUM	Mlc-g	Case=Gen|NumType=Card|Uninflect=Yes	24	nummod	24:nummod	start_char=118|end_char=123
+22	мільйонового	мільйоновий	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	24	amod	24:amod	start_char=124|end_char=136
+23	українського	український	ADJ	Ao-msgf	Case=Gen|Gender=Masc|Number=Sing	24	amod	24:amod	start_char=137|end_char=149
+24	народу	народ	NOUN	Ncmsgn	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	17	nmod	17:nmod	start_char=150|end_char=156
+25	та	та	CCONJ	Ccs	_	26	cc	26:cc	start_char=157|end_char=159
+26	воїнів	воїн	NOUN	Ncmpgy	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	24	conj	24:conj	start_char=160|end_char=166
+27	вкритої	вкритий	ADJ	Ap-fsgf-ep	Aspect=Perf|Case=Gen|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	24	amod	24:amod	start_char=167|end_char=174
+28	славою	слава	NOUN	Ncfsin	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	27	obl	27:obl	start_char=175|end_char=181
+29	революційної	революційний	ADJ	Ao-fsgf	Case=Gen|Gender=Fem|Number=Sing	30	amod	30:amod	start_char=182|end_char=194
+30	УПА	УПА	PROPN	Y	Abbr=Yes|Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing|Uninflect=Yes	28	nmod	28:nmod	start_char=195|end_char=198
+31	.	.	PUNCT	U	_	15	punct	15:punct	start_char=198|end_char=199
 

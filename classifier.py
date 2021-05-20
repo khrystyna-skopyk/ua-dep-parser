@@ -9,7 +9,7 @@ from models import Word, Sentence
 from helpers import Graph
 from stanza_connector import StanzaConnector
 from dia_connector import DiaConnector
-from trankit_connector import TrankitConnector
+#from trankit_connector import TrankitConnector
 from collections import OrderedDict
 from conllu.models import TokenList, Token
 from conllu import parse_tree
@@ -111,25 +111,74 @@ class DependencyParsingClassifier:
         input_dict[value]["count"] += 1
         input_dict[value]["weight"] += weigth
 
-    def predict_full_text(self,text, delay = 0):
+    def predict_full_text(self,text):
         sentences = text.split('\n')
         parsed_sentences = []
         for sentence in sentences:
-            time.sleep(delay)
-            print(sentence)
             parsed_sentences += self.predict(sentence)
         self.sentences = parsed_sentences
         return parsed_sentences
+
+    def calculate_soft_score(self, x_predictions, y_predictions):
+        matches = 0
+        x_words = []
+        y_words = []
+        for sentence in x_predictions:
+            x_words += sentence.words
+        for sentence in y_predictions:
+            y_words += sentence.words
+
+        for index, word in enumerate(x_words):
+            if index >= len(y_words):
+                continue 
+            if x_words[index].deprel != y_words[index].deprel:
+                continue
+            if x_words[index].head != y_words[index].head:
+                continue
+            matches+=1
+        return matches / len(x_predictions)
+
+    def soft_voting(self, predictions):
+        predictions_dict = {}
+        for index, prediction in enumerate(predictions):
+            predictions_dict[index] = prediction
+
+        scores_dict = {}
+        for prediction_i in predictions_dict:
+            for prediction_j in predictions_dict:
+                if prediction_i == prediction_j:
+                    continue
+                score = self.calculate_soft_score(predictions_dict[prediction_i],predictions_dict[prediction_j])
+                if prediction_i not in scores_dict:
+                    scores_dict[prediction_i] = 1
+                scores_dict[prediction_i] *= score
+
+        for scores_key in scores_dict:
+            if len(predictions_dict[scores_key]) == 0:
+                continue
+            sentence = predictions_dict[scores_key][0]
+            if len(sentence.words) == 0:
+                continue
+            las_weight = sentence.words[0].las_weight
+            scores_dict[scores_key] *= las_weight
+        selection_index = max(scores_dict.items(), key=operator.itemgetter(1))[0]
+        return predictions_dict[selection_index]
+
 
     def predict(self, sentence):
         predictions = []
         for connector in self.connectors:
             prediction = connector.predict(sentence)
             predictions.append(prediction)
-        predictions = self.revert_predictions(predictions)
-        parsed_sentences = self.merge_predictions(predictions)
+        reverted_predictions = self.revert_predictions(predictions)
+        parsed_sentences = self.merge_predictions(reverted_predictions)
+        circle_dependency = False
         for sentence in parsed_sentences:
-            self.check_for_circle(sentence)
+            check_result = self.check_for_circle(sentence)
+            if check_result == True:
+                circle_dependency = True
+        if circle_dependency == True:
+            parsed_sentences = self.soft_voting(predictions)
         return parsed_sentences
 
     def check_for_circle(self, sentence):
@@ -144,7 +193,7 @@ class DependencyParsingClassifier:
             connections = relations[relation]
             for connection in connections:
                 graph.add_edge(relation, connection)
-        print(graph.check_is_cyclic())
+        return graph.check_is_cyclic()
 
 
     def write_to_conllu(self, path):
@@ -231,6 +280,6 @@ if __name__ == "__main__":
     connector_glove = StanzaConnector(model=model_glove)
     # connector_trankit = TrankitConnector()
 
-    classifier = DependencyParsingClassifier([connector_glove])
+    classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove])
     predictions = classifier.predict_full_text(full_text)
     classifier.write_to_conllu("ensemble.conllu")
