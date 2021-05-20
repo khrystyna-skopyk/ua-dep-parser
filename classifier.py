@@ -27,6 +27,8 @@ class DependencyParsingClassifier:
 
         for predictions_list in predictions:
             for index_prediction, prediction in enumerate(predictions_list):
+                if len(batches) <= index_prediction:
+                    continue
                 if len(batches[index_prediction]) == 0:
                     batches[index_prediction] = [[] for number in range(len(prediction.words))]
                 for index, word in enumerate(prediction.words):
