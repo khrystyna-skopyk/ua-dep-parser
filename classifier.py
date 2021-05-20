@@ -6,7 +6,7 @@ from configs import config_fast_text, config_glove, config_original
 from models import Word, Sentence
 from helpers import Graph
 from connectors import StanzaConnector
-#from trankit_connector import TrankitConnector
+from connectors import TrankitConnector
 from collections import OrderedDict
 from conllu.models import TokenList
 from conllu import parse_tree
@@ -113,6 +113,7 @@ class DependencyParsingClassifier:
         parsed_sentences = []
         for sentence in sentences:
             parsed_sentences += self.predict(sentence)
+            print(sentence)
         self.sentences = parsed_sentences
         return parsed_sentences
 
@@ -239,8 +240,8 @@ if __name__ == "__main__":
     connector_original = StanzaConnector(model=model_original)
     connector_fast_text = StanzaConnector(model=model_fast_text)
     connector_glove = StanzaConnector(model=model_glove)
-    # connector_trankit = TrankitConnector()
+    connector_trankit = TrankitConnector()
 
-    classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove])
+    classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove, connector_trankit])
     predictions = classifier.predict_full_text(full_text)
     classifier.write_to_conllu("data/conllu-generated/ensemble.conllu")
