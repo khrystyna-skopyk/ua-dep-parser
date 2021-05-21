@@ -24,12 +24,15 @@ class DataLoader:
     def __extract(self):
 
         print("Extracting data")
-        with zipfile.ZipFile('./models/original_embedding_original_ud.zip', 'r') as zip_ref:
-            zip_ref.extractall('./models/')
-        with zipfile.ZipFile('./models/fasttext_embedding_augmented_ud.zip', 'r') as zip_ref:
-            zip_ref.extractall('./models/')
-        with zipfile.ZipFile('./models/glove_embedding_augmented_ud.zip', 'r') as zip_ref:
-            zip_ref.extractall('./models/')
+        try:
+            with zipfile.ZipFile('./models/original_embedding_original_ud.zip', 'r') as zip_ref:
+                zip_ref.extractall('./models/')
+            with zipfile.ZipFile('./models/fasttext_embedding_augmented_ud.zip', 'r') as zip_ref:
+                zip_ref.extractall('./models/')
+            with zipfile.ZipFile('./models/glove_embedding_augmented_ud.zip', 'r') as zip_ref:
+                zip_ref.extractall('./models/')
+        except:
+            pass
 
         print('Removing unnecessary files')
         try:
