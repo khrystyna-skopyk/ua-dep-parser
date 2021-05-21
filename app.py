@@ -1,8 +1,9 @@
-from stanza_connector import StanzaConnector
+from connectors import StanzaConnector
 from flask import Flask
 from flask import request
 import stanza
 
+from data_loader import DataLoader
 from configs import config_original, config_fast_text, config_glove
 from stanza.models.common.pretrain import Pretrain
 from classifier import DependencyParsingClassifier
@@ -51,5 +52,7 @@ def prepare_response(predictions):
     return result
 
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
+    data_loader = DataLoader()
+    data_loader.init_data()
     app.run(debug=True, host="0.0.0.0", port=5000, use_reloader=False)
