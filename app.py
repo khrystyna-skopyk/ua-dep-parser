@@ -5,8 +5,8 @@ import stanza
 
 from data_loader import DataLoader
 from configs import config_original, config_fast_text, config_glove
-from stanza.models.common.pretrain import Pretrain
 from classifier import DependencyParsingClassifier
+from pretrain import PretrainInitializer
 
 
 app = Flask(__name__)
@@ -21,24 +21,16 @@ def parse_text():
         return ""
     text = request.form["text"]
 
-    pt_original = Pretrain("ewt_original.pt", "./models/original/ukoriginalvectors.xz")
-    pt_fast_text = Pretrain("ewt_fast_text.pt", "./models/fast-text/uk.vectors.xz")
-    pt_glove = Pretrain("ewt_glove.pt", "./models/glove/glove.xz")
- 
-    pt_original.load()
-    pt_fast_text.load()
-    pt_glove.load()
+    model_original = stanza.Pipeline(**config_original, use_gpu=False)
+    model_fast_text = stanza.Pipeline(**config_fast_text, use_gpu=False)
+    model_glove = stanza.Pipeline(**config_glove, use_gpu=False)
 
-    model_original = stanza.Pipeline(**config_original)
-    model_fast_text = stanza.Pipeline(**config_fast_text)
-    model_glove = stanza.Pipeline(**config_glove)
-
-    connector_trankit = TrankitConnector()
+    ##connector_trankit = TrankitConnector()
     connector_original = StanzaConnector(model=model_original)
     connector_fast_text = StanzaConnector(model=model_fast_text)
     connector_glove = StanzaConnector(model=model_glove)
 
-    classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove, connector_trankit])
+    classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove])
     predictions = classifier.predict_full_text(text)
     response = prepare_response(predictions)
     return str(response)
@@ -55,5 +47,7 @@ def prepare_response(predictions):
 
 if __name__ == "__main__":
     data_loader = DataLoader()
+    pretrain_initializer = PretrainInitializer()
     data_loader.init_data()
+    pretrain_initializer.initialize()
     app.run(debug=True, host="0.0.0.0", port=5000, use_reloader=False)
