@@ -40,32 +40,13 @@
         <div class="py-5 text-center">
             <h2>Ukrainian Language Dependency Parser</h2>
         </div>
+        <br />
+        <br />
+        <br />
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 offset-sm-3">
-                    {% if input_text|length %}
-                    {% else %}
-                        {% set input_text = '«Українська правда» — українське суспільно-політичне інтернет-ЗМІ, яке заснував Георгій Гонгадзе у квітні 2000 року.' %}
-                    {% endif %}
-                    <form method='post'>
-                        <div class="form-group">
-                            <label for="text-area" class="form-label">Input Sentence <span class="text-muted"></span></label>
-                            <textarea class="form-control" name='input_text' rows="5">{{input_text}}</textarea>
-                        </div>
-                        <div>
-                            <input type="submit" class="btn btn-primary" text="Submit" />
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 offset-sm-3">
-                    <div class="form-group">
-                        <br />
-                        {% if output_text|length %}
-                        <textarea class="form-control" name='input_text' rows="10">{{output_text}}</textarea>
-                        {% endif %}
-                    </div>
+                    <h3>Models has been successfully reinitialized.</h3>
                 </div>
             </div>
         </div>

@@ -21,13 +21,14 @@ def check():
 def reinitialize_pretrain():
     pretrain_initializer = PretrainInitializer()
     pretrain_initializer.reinitialize()
-    return str("success")
+    return render_template('/reinitialize-success.html')
 
 @app.route("/", methods=["GET","POST"])
 def parse_text():
     if request.method == "GET":
-        return render_template('/index.html')
-    text = request.form["text"]
+        return render_template('/index.html', input_text='')
+    
+    text = request.form["input_text"]
 
     model_original = stanza.Pipeline(**config_original, use_gpu=False)
     model_fast_text = stanza.Pipeline(**config_fast_text, use_gpu=False)
@@ -41,7 +42,7 @@ def parse_text():
     classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove, connector_trankit])
     predictions = classifier.predict_full_text(text)
     response = prepare_response(predictions)
-    return str(response)
+    return render_template('/index.html', input_text=text, output_text = response)
 
 def prepare_response(predictions):
     result = []

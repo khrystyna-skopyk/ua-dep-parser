@@ -64,11 +64,11 @@ class TrankitConnector(Connector):
         if "lang" not in kwargs:
             kwargs["lang"] = "ukrainian"
         try:
-            kwargs["model"] = tpipe(lang=kwargs['lang'], gpu=True, cache_dir='./cache')
+            kwargs["model"] = tpipe(lang=kwargs['lang'], gpu=False, cache_dir='./cache')
         except Exception as ex:
             print(ex)
         if "model" not in kwargs:
-            kwargs["model"] = tpipe(lang=kwargs['lang'], gpu=True, cache_dir='./cache')
+            kwargs["model"] = tpipe(lang=kwargs['lang'], gpu=False, cache_dir='./cache')
 
     def __init__(self, **kwargs):
         if "model" not in kwargs:
