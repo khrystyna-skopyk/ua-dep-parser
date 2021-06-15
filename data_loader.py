@@ -9,8 +9,6 @@ class DataLoader:
     glove = 'https://github.com/olexandryermilov/ukrdata/raw/master/glove_embedding_augmented_ud.zip'
 
     def __load(self):
-        if os.path.isdir('models') == True:
-            return
         print('Beginning to download models')
         os.mkdir("models")
         print("Downloading original_ud")
@@ -57,6 +55,10 @@ class DataLoader:
             pass
 
     def init_data(self):
+        
+        if os.path.isdir('models') == True:
+            return
+
         self.__load()
         self.__extract()
 
