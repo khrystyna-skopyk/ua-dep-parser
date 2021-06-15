@@ -12,7 +12,11 @@ However, sometimes it happens that after merging, the tree may contain circular 
 
 How to run the project:
 
-- Install all required packages
+- Create virtual environment `python -m venv venv`
+
+- Switch to virtual environment  `source venv/bin/activate`
+
+- Install all required packages  `pip install -r requirements.txt`
 
 - Run `python app.py`
 
