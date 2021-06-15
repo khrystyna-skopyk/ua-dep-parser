@@ -25,12 +25,12 @@ def parse_text():
     model_fast_text = stanza.Pipeline(**config_fast_text, use_gpu=False)
     model_glove = stanza.Pipeline(**config_glove, use_gpu=False)
 
-    ##connector_trankit = TrankitConnector()
+    connector_trankit = TrankitConnector()
     connector_original = StanzaConnector(model=model_original)
     connector_fast_text = StanzaConnector(model=model_fast_text)
     connector_glove = StanzaConnector(model=model_glove)
 
-    classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove])
+    classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove, connector_trankit])
     predictions = classifier.predict_full_text(text)
     response = prepare_response(predictions)
     return str(response)

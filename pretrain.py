@@ -1,5 +1,6 @@
 import os.path
 import stanza
+from trankit import Pipeline, pipeline
 from stanza.models.common.pretrain import Pretrain
 
 class PretrainInitializer:
@@ -26,7 +27,10 @@ class PretrainInitializer:
         stanza.download('uk')
 
     def __init_trankit(self):
-        pass
+        if os.path.isdir('cache') == True:
+            return
+        print("Initializing Trankit models")
+        Pipeline('ukrainian', cache_dir='./cache')
 
     def initialize(self):
         self.__init_stanza()
