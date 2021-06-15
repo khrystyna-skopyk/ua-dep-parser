@@ -1,6 +1,7 @@
 from connectors import StanzaConnector, TrankitConnector
 from flask import Flask
-from flask import request
+from flask import request, render_template
+from flask_bootstrap import Bootstrap
 import stanza
 
 from data_loader import DataLoader
@@ -10,15 +11,22 @@ from pretrain import PretrainInitializer
 
 
 app = Flask(__name__)
+bootstrap = Bootstrap(app)
 
 @app.route("/check", methods=["GET"])
 def check():
     return str("success")
 
+@app.route("/reinitialize-pretrain", methods=["GET"])
+def reinitialize_pretrain():
+    pretrain_initializer = PretrainInitializer()
+    pretrain_initializer.reinitialize()
+    return str("success")
+
 @app.route("/", methods=["GET","POST"])
 def parse_text():
     if request.method == "GET":
-        return ""
+        return render_template('/index.html')
     text = request.form["text"]
 
     model_original = stanza.Pipeline(**config_original, use_gpu=False)

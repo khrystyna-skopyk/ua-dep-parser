@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        {% block styles %}
+            <!-- Bootstrap CSS -->
+            {{ bootstrap.load_css() }}
+        {% endblock %}
+
+        <title>Ukrainian Language Dependency Parsing</title>
+        {% endblock %}
+    </head>
+    <body>
+        <!-- Your page content -->
+        {% block content %}
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+              <a class="navbar-brand" href="/">Ukranian Parsing</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+              </div>
+            </nav>
+        </header>
+        <br/>
+        <div class="py-5 text-center">
+            <h2>Ukrainian Language Dependency Parser</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <form>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Input Sentence <span class="text-muted"></span></label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" class="btn btn-primary" text="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+
+        {% block scripts %}
+            <!-- Optional JavaScript -->
+            {{ bootstrap.load_js() }}
+        {% endblock %}
+    </body>
+</html>
