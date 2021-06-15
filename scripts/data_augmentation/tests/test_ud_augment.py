@@ -1,11 +1,9 @@
-from nose.tools import assert_equal
-from parameterized import parameterized
-import unittest
+import pytest
 from scripts.data_augmentation.augment import doc_to_text
 from scripts.data_augmentation.ud_augment import DataAugmentation
 
-class TestUDAugment(unittest.TestCase):
-    @parameterized.expand([
+
+@pytest.mark.parametrize('name, doc, expected', [
         ["TP",
          [{'id': (1,), 'text': 'У', 'lemma': 'у', 'upos': 'ADP', 'xpos': 'Spsl', 'feats': 'Case=Loc', 'head': 2,
            'deprel': 'case', 'deps': '2:case', 'misc': 'Id=0003|LTranslit=u|Translit=U'},
@@ -1070,11 +1068,9 @@ class TestUDAugment(unittest.TestCase):
         'deps': '2:punct', 'misc': 'Id=0set|LTranslit=.|Translit=.'}],
       ["Уявляв я собі, що померлі переживають, чекаючи на нас."]]
     ])
-    def test_ud_augment(self, name, doc, expected):
-        doc_to_aug = DataAugmentation(doc)
-        doc_to_aug.augment()
-        aug_sents = doc_to_aug.get_aug_docs()
-        actual = [doc_to_text(aug_s) for aug_s in aug_sents]
-        print(actual)
-        print(len(actual))
-        assert_equal(actual, expected)
+def test_ud_augment(name, doc, expected):
+    doc_to_aug = DataAugmentation(doc)
+    doc_to_aug.augment()
+    aug_sents = doc_to_aug.get_aug_docs()
+    actual = [doc_to_text(aug_s) for aug_s in aug_sents]
+    assert actual == expected
