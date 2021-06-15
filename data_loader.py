@@ -13,17 +13,19 @@ class DataLoader:
             return
         print('Beginning to download models')
         os.mkdir("models")
-        
+        print("Downloading original_ud")
         wget.download(self.original_ud, './models/')
+        print("\nDownloading fast_text")
         wget.download(self.fast_text, './models/')
+        print("\nDownloading glove")
         wget.download(self.glove, './models/')
 
-        print("Models has been downloaded")
+        print("\nModels has been downloaded ")
         
 
     def __extract(self):
 
-        print("Extracting data")
+        print("\nExtracting data")
         try:
             with zipfile.ZipFile('./models/original_embedding_original_ud.zip', 'r') as zip_ref:
                 zip_ref.extractall('./models/')
@@ -34,7 +36,7 @@ class DataLoader:
         except:
             pass
 
-        print('Removing unnecessary files')
+        print('\nRemoving unnecessary files')
         try:
             shutil.rmtree('./models/__MACOSX')
         except:
