@@ -9,9 +9,9 @@ from stanza.models.common.pretrain import Pretrain
 class PretrainInitializer:
 
     def __init__(self):
-        self.fast_text_file = 'ewt_fast_text.pt'
-        self.original_file = 'ewt_original.pt'
-        self.glove_file = 'ewt_glove.pt'
+        self.fast_text_file = './models/fast-text/ewt_fast_text.pt'
+        self.original_file = './models/original/ewt_original.pt'
+        self.glove_file = './models/glove/ewt_glove.pt'
 
     def __init_stanza(self):
         
