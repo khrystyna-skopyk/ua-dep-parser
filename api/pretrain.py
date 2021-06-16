@@ -14,9 +14,9 @@ ROOT_DIR = os.path.dirname(CURRENT_DIR)
 class PretrainInitializer:
 
     def __init__(self):
-        self.fast_text_file = f'{ROOT_DIR}/ewt_fast_text.pt'
-        self.original_file = f'{ROOT_DIR}/ewt_original.pt'
-        self.glove_file = f'{ROOT_DIR}/ewt_glove.pt'
+        self.fast_text_file = f'{ROOT_DIR}/models/fast-text/ewt_fast_text.pt'
+        self.original_file = f'{ROOT_DIR}/models/original/ewt_original.pt'
+        self.glove_file = f'{ROOT_DIR}/models/glove/ewt_glove.pt'
 
     def __init_stanza(self):
         

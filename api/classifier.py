@@ -234,9 +234,9 @@ if __name__ == "__main__":
 
     full_text = "Супроти тамошнього населення - культурна, ввічлива, бадьора, весела, - як пристало на синів культурного і лицарського 45-ти мільйонового українського народу та воїнів вкритої славою революційної УПА."
     
-    pt_original = Pretrain(f"{ROOT_DIR}/ewt_original.pt", f"{ROOT_DIR}/models/original/ukoriginalvectors.xz")
-    pt_fast_text = Pretrain(f"{ROOT_DIR}/ewt_fast_text.pt", f"{ROOT_DIR}/models/fast-text/uk.vectors.xz")
-    pt_glove = Pretrain(f"{ROOT_DIR}/ewt_glove.pt", f"{ROOT_DIR}/models/glove/glove.xz")
+    pt_original = Pretrain(f"{ROOT_DIR}/models/original/ewt_original.pt", f"{ROOT_DIR}/models/original/ukoriginalvectors.xz")
+    pt_fast_text = Pretrain(f"{ROOT_DIR}/models/fast-text/ewt_fast_text.pt", f"{ROOT_DIR}/models/fast-text/uk.vectors.xz")
+    pt_glove = Pretrain(f"{ROOT_DIR}/models/glove/ewt_glove.pt", f"{ROOT_DIR}/models/glove/glove.xz")
  
     pt_original.load()
     pt_fast_text.load()
