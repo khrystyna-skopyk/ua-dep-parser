@@ -1,13 +1,13 @@
-from connectors import StanzaConnector, TrankitConnector
+from api.connectors import StanzaConnector, TrankitConnector
 from flask import Flask
 from flask import request, render_template
 from flask_bootstrap import Bootstrap
 import stanza
 
-from data_loader import DataLoader
-from configs import config_original, config_fast_text, config_glove
-from classifier import DependencyParsingClassifier
-from pretrain import PretrainInitializer
+from api.data_loader import DataLoader
+from api.configs import config_original, config_fast_text, config_glove
+from api.classifier import DependencyParsingClassifier
+from api.pretrain import PretrainInitializer
 
 
 app = Flask(__name__)
@@ -23,7 +23,7 @@ def reinitialize_pretrain():
     pretrain_initializer.reinitialize()
     return render_template('/reinitialize-success.html')
 
-@app.route("/", methods=["GET","POST"])
+@app.route("/", methods=["GET", "POST"])
 def parse_text():
     if request.method == "GET":
         return render_template('/index.html', input_text='')

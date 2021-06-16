@@ -1,15 +1,18 @@
 import operator
 import stanza
-from stanza.models.common.pretrain import Pretrain
+import os
 
-from configs import config_fast_text, config_glove, config_original
-from models import Word, Sentence
-from helpers import Graph
-from connectors import StanzaConnector
-from connectors import TrankitConnector
+from stanza.models.common.pretrain import Pretrain
+from api.configs import config_fast_text, config_glove, config_original
+from api.models import Word, Sentence
+from api.helpers import Graph
+from api.connectors import StanzaConnector, TrankitConnector
 from collections import OrderedDict
 from conllu.models import TokenList
-from conllu import parse_tree
+
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(CURRENT_DIR)
+
 
 class DependencyParsingClassifier:
     def __init__(self, connectors):
@@ -64,7 +67,7 @@ class DependencyParsingClassifier:
                     self.create_values_dict(word.feats, feats_list, word.uas_weight)
                     self.create_values_dict(word.misc, miscs, word.uas_weight)
 
-                word = self.merge_word_values(deprels, heads, ids, texts, uposes, lemmas,xposes, feats_list, miscs)
+                word = self.merge_word_values(deprels, heads, ids, texts, uposes, lemmas, xposes, feats_list, miscs)
                 parsed_sentence.add(word)
             parsed_sentences.append(parsed_sentence)
         return parsed_sentences
@@ -114,7 +117,7 @@ class DependencyParsingClassifier:
         input_dict[value]["count"] += 1
         input_dict[value]["weight"] += weigth
 
-    def predict_full_text(self,text):
+    def predict_full_text(self, text):
         sentences = text.split('\n')
         parsed_sentences = []
         for sentence in sentences:
@@ -226,14 +229,14 @@ class DependencyParsingClassifier:
 
 if __name__ == "__main__":
     
-    with open('./data/UD_Ukrainian-IU/uk_iu-ud-test.txt') as f:
-        full_text = f.read()
+    # with open(f'{ROOT_DIR}/data/UD_Ukrainian-IU/uk_iu-ud-test.txt') as f:
+    #     full_text = f.read()
 
-    #full_text = "Супроти тамошнього населення - культурна, ввічлива, бадьора, весела, - як пристало на синів культурного і лицарського 45-ти мільйонового українського народу та воїнів вкритої славою революційної УПА."
+    full_text = "Супроти тамошнього населення - культурна, ввічлива, бадьора, весела, - як пристало на синів культурного і лицарського 45-ти мільйонового українського народу та воїнів вкритої славою революційної УПА."
     
-    pt_original = Pretrain("ewt_original.pt", "./models/original/ukoriginalvectors.xz")
-    pt_fast_text = Pretrain("ewt_fast_text.pt", "./models/fast-text/uk.vectors.xz")
-    pt_glove = Pretrain("ewt_glove.pt", "./models/glove/glove.xz")
+    pt_original = Pretrain(f"{ROOT_DIR}/ewt_original.pt", f"{ROOT_DIR}/models/original/ukoriginalvectors.xz")
+    pt_fast_text = Pretrain(f"{ROOT_DIR}/ewt_fast_text.pt", f"{ROOT_DIR}/models/fast-text/uk.vectors.xz")
+    pt_glove = Pretrain(f"{ROOT_DIR}/ewt_glove.pt", f"{ROOT_DIR}/models/glove/glove.xz")
  
     pt_original.load()
     pt_fast_text.load()
@@ -250,4 +253,4 @@ if __name__ == "__main__":
 
     classifier = DependencyParsingClassifier([connector_original, connector_fast_text, connector_glove, connector_trankit])
     predictions = classifier.predict_full_text(full_text)
-    classifier.write_to_conllu("data/conllu-generated/ensemble.conllu")
+    classifier.write_to_conllu(f"{ROOT_DIR}/data/conllu-generated/ensemble.conllu")

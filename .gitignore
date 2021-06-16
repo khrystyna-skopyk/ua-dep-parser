@@ -3,7 +3,10 @@
 scripts/__pycache__
 scripts/data_augmentation/__pycache__
 scripts/data_augmentation/tests/.DS_Store
+scripts/data_augmentation/.DS_Store
+scripts/.DS_Store
 data/.DS_Store
+api/.DS_Store
 Dockerfile.local
 # Byte-compiled / optimized / DLL files
 __pycache__/
