@@ -55,8 +55,8 @@ def prepare_response(predictions):
 
 
 if __name__ == "__main__":
-    data_loader = DataLoader()
+    # data_loader = DataLoader()
     pretrain_initializer = PretrainInitializer()
-    data_loader.init_data()
+    # data_loader.init_data()
     pretrain_initializer.initialize()
     app.run(debug=True, host="0.0.0.0", port=5000, use_reloader=False)
